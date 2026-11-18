@@ -12,7 +12,7 @@ Patrol durations are simulated. This is an academic routing study; the routes ar
 
 - [Final project report](Final%20Project%20Report.pdf): formulation, experiments, visualisations, and discussion.
 - [Saved experiment index](RESULTS.md): links to the HTML maps and plots, with their recorded feasibility status.
-- [Interactive showcase source](docs/index.html): a page with the final route map, convergence plot, and benchmark. Open it locally in a browser, or [publish it with GitHub Pages](#publishing-the-interactive-page).
+- [Interactive showcase](https://pengsiangtang.github.io/Heuristics-Project-Route-Optimization/): explore the final route map, convergence plot, and benchmark in your browser. The [page source](docs/index.html) is included in this repository.
 
 ### Final route map
 
@@ -127,7 +127,7 @@ After pushing this repository to GitHub:
 
 1. Open **Settings → Pages**.
 2. Set **Source** to **Deploy from a branch**.
-3. Choose the branch containing the showcase (normally `main`) and the **`/docs`** folder, then save.
+3. Choose **`master`** and the **`/docs`** folder, then save.
 4. Use the URL shown by GitHub Pages as the live showcase link in this README.
 
-See [GitHub's publishing-source instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site). Publication is not yet configured for this local repository.
+This repository publishes from `master` → `/docs` at [the live showcase URL](https://pengsiangtang.github.io/Heuristics-Project-Route-Optimization/). Future pushes to that source update the page. See [GitHub's publishing-source instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
