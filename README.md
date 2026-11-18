@@ -1,4 +1,4 @@
-# Singapore Police Patrol Routing
+# Multi-Depot Route Optimisation with Metaheuristics
 
 **How can 56 patrol vehicles cover 304 Singapore subzones in one night while minimising travel time?** We model the problem as routing from seven headquarters within a ten-hour shift, then combine a greedy initial solution with simulated annealing and five local search operators.
 
@@ -6,13 +6,13 @@ The final saved full-instance run achieved **2,205 minutes of total travel acros
 
 A group project for SUTD's **40.018 Heuristics and Systems Theory (2025)**.
 
-Patrol durations are simulated. This is an academic routing study; the routes are not operational police schedules.
+An independent university coursework project using a Singapore patrol-routing case study and simulated patrol durations. Not affiliated with or endorsed by the Singapore Police Force. The routes do not represent actual police deployments.
 
 ## Report and results
 
 - [Final project report](Final%20Project%20Report.pdf): formulation, experiments, visualisations, and discussion.
 - [Saved experiment index](RESULTS.md): links to the HTML maps and plots, with their recorded feasibility status.
-- [Interactive showcase](https://pengsiangtang.github.io/Heuristics-Project-Route-Optimization/): explore the final route map, convergence plot, and benchmark in your browser. The [page source](docs/index.html) is included in this repository.
+- [Interactive showcase](https://pengsiangtang.github.io/Multi-Depot-Route-Optimisation-with-Metaheuristics/): explore the final route map, convergence plot, and benchmark in your browser. The [page source](docs/index.html) is included in this repository.
 
 ### Final route map
 
@@ -130,4 +130,4 @@ After pushing this repository to GitHub:
 3. Choose **`master`** and the **`/docs`** folder, then save.
 4. Use the URL shown by GitHub Pages as the live showcase link in this README.
 
-This repository publishes from `master` → `/docs` at [the live showcase URL](https://pengsiangtang.github.io/Heuristics-Project-Route-Optimization/). Future pushes to that source update the page. See [GitHub's publishing-source instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+This repository publishes from `master` → `/docs` at [the live showcase URL](https://pengsiangtang.github.io/Multi-Depot-Route-Optimisation-with-Metaheuristics/). Future pushes to that source update the page. See [GitHub's publishing-source instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
