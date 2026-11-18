@@ -1,0 +1,888 @@
+{
+  "source_report": "2 Solving Actual Size Problem/Results from runs with different params/tsp_SAgreedy_report_20250707_001515.html",
+  "source_sha256": "cfcc70f20fa5160dc3cdc7430fb502909fa6a6788c58c1c37b060f882017c937",
+  "data_sha256": {
+    "data/T.csv": "565af644542a8e31006dac5582ccbc3a52ce2538cd23ccca37d7f9ab0c6bd3b6",
+    "data/patrol timings.csv": "a5d0a2478688d8c6006cad61d62d1ed0fd30f741fe9839f702b824b6790f8206"
+  },
+  "objective_minutes": 2205.0,
+  "latest_return_minutes": 599.0,
+  "search_budget_seconds": 3600,
+  "checks": {
+    "all_304_locations_visited_once": true,
+    "all_56_vehicles_present": true,
+    "assigned_start_and_end_depots": true,
+    "no_interior_depot_visits": true,
+    "recorded_route_durations_match_data": true,
+    "all_routes_within_600_minutes": true,
+    "computed_objective_matches_2205": true
+  },
+  "note": "Audit of archived routes, not an optimisation rerun. Report prose says latest return 559; saved report and shared data give 599.",
+  "routes": [
+    {
+      "vehicle": "hq1_frc1",
+      "depot": 304,
+      "locations": [
+        304,
+        289,
+        283,
+        281,
+        279,
+        295,
+        285,
+        304
+      ],
+      "recorded_duration_minutes": 573.0,
+      "computed_duration_minutes": 573.0
+    },
+    {
+      "vehicle": "hq1_frc2",
+      "depot": 304,
+      "locations": [
+        304,
+        294,
+        292,
+        297,
+        296,
+        276,
+        293,
+        158,
+        304
+      ],
+      "recorded_duration_minutes": 597.0,
+      "computed_duration_minutes": 597.0
+    },
+    {
+      "vehicle": "hq1_frc3",
+      "depot": 304,
+      "locations": [
+        304,
+        299,
+        288,
+        290,
+        291,
+        304
+      ],
+      "recorded_duration_minutes": 334.0,
+      "computed_duration_minutes": 334.0
+    },
+    {
+      "vehicle": "hq1_frc4",
+      "depot": 304,
+      "locations": [
+        304,
+        267,
+        298,
+        126,
+        118,
+        122,
+        121,
+        268,
+        304
+      ],
+      "recorded_duration_minutes": 590.0,
+      "computed_duration_minutes": 590.0
+    },
+    {
+      "vehicle": "hq1_frc5",
+      "depot": 304,
+      "locations": [
+        304,
+        271,
+        264,
+        2,
+        251,
+        261,
+        263,
+        304
+      ],
+      "recorded_duration_minutes": 520.0,
+      "computed_duration_minutes": 520.0
+    },
+    {
+      "vehicle": "hq1_frc6",
+      "depot": 304,
+      "locations": [
+        304,
+        127,
+        123,
+        124,
+        116,
+        119,
+        300,
+        301,
+        304
+      ],
+      "recorded_duration_minutes": 566.0,
+      "computed_duration_minutes": 566.0
+    },
+    {
+      "vehicle": "hq1_frc7",
+      "depot": 304,
+      "locations": [
+        304,
+        269,
+        270,
+        260,
+        149,
+        194,
+        1,
+        0,
+        304
+      ],
+      "recorded_duration_minutes": 544.0,
+      "computed_duration_minutes": 544.0
+    },
+    {
+      "vehicle": "hq1_frc8",
+      "depot": 304,
+      "locations": [
+        304,
+        262,
+        302,
+        277,
+        274,
+        275,
+        273,
+        304
+      ],
+      "recorded_duration_minutes": 524.0,
+      "computed_duration_minutes": 524.0
+    },
+    {
+      "vehicle": "hq2_frc1",
+      "depot": 305,
+      "locations": [
+        305,
+        146,
+        168,
+        178,
+        179,
+        180,
+        190,
+        305
+      ],
+      "recorded_duration_minutes": 521.0,
+      "computed_duration_minutes": 521.0
+    },
+    {
+      "vehicle": "hq2_frc2",
+      "depot": 305,
+      "locations": [
+        305,
+        189,
+        305
+      ],
+      "recorded_duration_minutes": 85.0,
+      "computed_duration_minutes": 85.0
+    },
+    {
+      "vehicle": "hq2_frc3",
+      "depot": 305,
+      "locations": [
+        305,
+        172,
+        173,
+        170,
+        54,
+        56,
+        55,
+        305
+      ],
+      "recorded_duration_minutes": 490.0,
+      "computed_duration_minutes": 490.0
+    },
+    {
+      "vehicle": "hq2_frc4",
+      "depot": 305,
+      "locations": [
+        305,
+        47,
+        40,
+        38,
+        39,
+        188,
+        186,
+        187,
+        305
+      ],
+      "recorded_duration_minutes": 563.0,
+      "computed_duration_minutes": 563.0
+    },
+    {
+      "vehicle": "hq2_frc5",
+      "depot": 305,
+      "locations": [
+        305,
+        167,
+        171,
+        185,
+        272,
+        278,
+        280,
+        305
+      ],
+      "recorded_duration_minutes": 542.0,
+      "computed_duration_minutes": 542.0
+    },
+    {
+      "vehicle": "hq2_frc6",
+      "depot": 305,
+      "locations": [
+        305,
+        52,
+        51,
+        57,
+        204,
+        42,
+        41,
+        305
+      ],
+      "recorded_duration_minutes": 533.0,
+      "computed_duration_minutes": 533.0
+    },
+    {
+      "vehicle": "hq2_frc7",
+      "depot": 305,
+      "locations": [
+        305,
+        192,
+        303,
+        181,
+        184,
+        182,
+        183,
+        191,
+        305
+      ],
+      "recorded_duration_minutes": 599.0,
+      "computed_duration_minutes": 599.0
+    },
+    {
+      "vehicle": "hq2_frc8",
+      "depot": 305,
+      "locations": [
+        305,
+        174,
+        176,
+        175,
+        177,
+        193,
+        169,
+        166,
+        305
+      ],
+      "recorded_duration_minutes": 584.0,
+      "computed_duration_minutes": 584.0
+    },
+    {
+      "vehicle": "hq3_frc1",
+      "depot": 306,
+      "locations": [
+        306,
+        8,
+        306
+      ],
+      "recorded_duration_minutes": 88.0,
+      "computed_duration_minutes": 88.0
+    },
+    {
+      "vehicle": "hq3_frc2",
+      "depot": 306,
+      "locations": [
+        306,
+        87,
+        4,
+        3,
+        7,
+        198,
+        12,
+        17,
+        306
+      ],
+      "recorded_duration_minutes": 592.0,
+      "computed_duration_minutes": 592.0
+    },
+    {
+      "vehicle": "hq3_frc3",
+      "depot": 306,
+      "locations": [
+        306,
+        36,
+        35,
+        31,
+        71,
+        32,
+        53,
+        306
+      ],
+      "recorded_duration_minutes": 534.0,
+      "computed_duration_minutes": 534.0
+    },
+    {
+      "vehicle": "hq3_frc4",
+      "depot": 306,
+      "locations": [
+        306,
+        16,
+        6,
+        15,
+        9,
+        18,
+        5,
+        252,
+        306
+      ],
+      "recorded_duration_minutes": 585.0,
+      "computed_duration_minutes": 585.0
+    },
+    {
+      "vehicle": "hq3_frc5",
+      "depot": 306,
+      "locations": [
+        306,
+        37,
+        29,
+        74,
+        75,
+        33,
+        76,
+        13,
+        306
+      ],
+      "recorded_duration_minutes": 556.0,
+      "computed_duration_minutes": 556.0
+    },
+    {
+      "vehicle": "hq3_frc6",
+      "depot": 306,
+      "locations": [
+        306,
+        10,
+        306
+      ],
+      "recorded_duration_minutes": 97.0,
+      "computed_duration_minutes": 97.0
+    },
+    {
+      "vehicle": "hq3_frc7",
+      "depot": 306,
+      "locations": [
+        306,
+        89,
+        14,
+        223,
+        11,
+        111,
+        150,
+        27,
+        306
+      ],
+      "recorded_duration_minutes": 599.0,
+      "computed_duration_minutes": 599.0
+    },
+    {
+      "vehicle": "hq3_frc8",
+      "depot": 306,
+      "locations": [
+        306,
+        77,
+        110,
+        93,
+        96,
+        60,
+        108,
+        109,
+        306
+      ],
+      "recorded_duration_minutes": 547.0,
+      "computed_duration_minutes": 547.0
+    },
+    {
+      "vehicle": "hq4_frc1",
+      "depot": 307,
+      "locations": [
+        307,
+        228,
+        229,
+        236,
+        237,
+        201,
+        226,
+        307
+      ],
+      "recorded_duration_minutes": 528.0,
+      "computed_duration_minutes": 528.0
+    },
+    {
+      "vehicle": "hq4_frc2",
+      "depot": 307,
+      "locations": [
+        307,
+        219,
+        221,
+        220,
+        307
+      ],
+      "recorded_duration_minutes": 230.0,
+      "computed_duration_minutes": 230.0
+    },
+    {
+      "vehicle": "hq4_frc3",
+      "depot": 307,
+      "locations": [
+        307,
+        235,
+        240,
+        206,
+        244,
+        239,
+        231,
+        234,
+        307
+      ],
+      "recorded_duration_minutes": 563.0,
+      "computed_duration_minutes": 563.0
+    },
+    {
+      "vehicle": "hq4_frc4",
+      "depot": 307,
+      "locations": [
+        307,
+        233,
+        307
+      ],
+      "recorded_duration_minutes": 102.0,
+      "computed_duration_minutes": 102.0
+    },
+    {
+      "vehicle": "hq4_frc5",
+      "depot": 307,
+      "locations": [
+        307,
+        19,
+        208,
+        207,
+        210,
+        205,
+        225,
+        307
+      ],
+      "recorded_duration_minutes": 486.0,
+      "computed_duration_minutes": 486.0
+    },
+    {
+      "vehicle": "hq4_frc6",
+      "depot": 307,
+      "locations": [
+        307,
+        222,
+        84,
+        90,
+        78,
+        92,
+        81,
+        79,
+        307
+      ],
+      "recorded_duration_minutes": 582.0,
+      "computed_duration_minutes": 582.0
+    },
+    {
+      "vehicle": "hq4_frc7",
+      "depot": 307,
+      "locations": [
+        307,
+        224,
+        112,
+        25,
+        22,
+        114,
+        83,
+        227,
+        307
+      ],
+      "recorded_duration_minutes": 586.0,
+      "computed_duration_minutes": 586.0
+    },
+    {
+      "vehicle": "hq4_frc8",
+      "depot": 307,
+      "locations": [
+        307,
+        88,
+        82,
+        85,
+        86,
+        26,
+        80,
+        91,
+        307
+      ],
+      "recorded_duration_minutes": 572.0,
+      "computed_duration_minutes": 572.0
+    },
+    {
+      "vehicle": "hq5_frc1",
+      "depot": 308,
+      "locations": [
+        308,
+        254,
+        257,
+        255,
+        256,
+        247,
+        259,
+        308
+      ],
+      "recorded_duration_minutes": 467.0,
+      "computed_duration_minutes": 467.0
+    },
+    {
+      "vehicle": "hq5_frc2",
+      "depot": 308,
+      "locations": [
+        308,
+        232,
+        308
+      ],
+      "recorded_duration_minutes": 72.0,
+      "computed_duration_minutes": 72.0
+    },
+    {
+      "vehicle": "hq5_frc3",
+      "depot": 308,
+      "locations": [
+        308,
+        218,
+        215,
+        214,
+        217,
+        216,
+        258,
+        308
+      ],
+      "recorded_duration_minutes": 537.0,
+      "computed_duration_minutes": 537.0
+    },
+    {
+      "vehicle": "hq5_frc4",
+      "depot": 308,
+      "locations": [
+        308,
+        238,
+        308
+      ],
+      "recorded_duration_minutes": 90.0,
+      "computed_duration_minutes": 90.0
+    },
+    {
+      "vehicle": "hq5_frc5",
+      "depot": 308,
+      "locations": [
+        308,
+        241,
+        308
+      ],
+      "recorded_duration_minutes": 74.0,
+      "computed_duration_minutes": 74.0
+    },
+    {
+      "vehicle": "hq5_frc6",
+      "depot": 308,
+      "locations": [
+        308,
+        242,
+        246,
+        249,
+        248,
+        243,
+        245,
+        308
+      ],
+      "recorded_duration_minutes": 574.0,
+      "computed_duration_minutes": 574.0
+    },
+    {
+      "vehicle": "hq5_frc7",
+      "depot": 308,
+      "locations": [
+        308,
+        250,
+        203,
+        200,
+        202,
+        199,
+        308
+      ],
+      "recorded_duration_minutes": 458.0,
+      "computed_duration_minutes": 458.0
+    },
+    {
+      "vehicle": "hq5_frc8",
+      "depot": 308,
+      "locations": [
+        308,
+        197,
+        195,
+        196,
+        230,
+        308
+      ],
+      "recorded_duration_minutes": 370.0,
+      "computed_duration_minutes": 370.0
+    },
+    {
+      "vehicle": "hq6_frc1",
+      "depot": 309,
+      "locations": [
+        309,
+        101,
+        99,
+        21,
+        66,
+        117,
+        49,
+        61,
+        309
+      ],
+      "recorded_duration_minutes": 553.0,
+      "computed_duration_minutes": 553.0
+    },
+    {
+      "vehicle": "hq6_frc2",
+      "depot": 309,
+      "locations": [
+        309,
+        62,
+        309
+      ],
+      "recorded_duration_minutes": 91.0,
+      "computed_duration_minutes": 91.0
+    },
+    {
+      "vehicle": "hq6_frc3",
+      "depot": 309,
+      "locations": [
+        309,
+        106,
+        98,
+        105,
+        103,
+        102,
+        63,
+        64,
+        309
+      ],
+      "recorded_duration_minutes": 588.0,
+      "computed_duration_minutes": 588.0
+    },
+    {
+      "vehicle": "hq6_frc4",
+      "depot": 309,
+      "locations": [
+        309,
+        65,
+        265,
+        68,
+        67,
+        69,
+        309
+      ],
+      "recorded_duration_minutes": 388.0,
+      "computed_duration_minutes": 388.0
+    },
+    {
+      "vehicle": "hq6_frc5",
+      "depot": 309,
+      "locations": [
+        309,
+        20,
+        24,
+        23,
+        70,
+        120,
+        125,
+        309
+      ],
+      "recorded_duration_minutes": 503.0,
+      "computed_duration_minutes": 503.0
+    },
+    {
+      "vehicle": "hq6_frc6",
+      "depot": 309,
+      "locations": [
+        309,
+        100,
+        34,
+        45,
+        48,
+        43,
+        44,
+        46,
+        309
+      ],
+      "recorded_duration_minutes": 541.0,
+      "computed_duration_minutes": 541.0
+    },
+    {
+      "vehicle": "hq6_frc7",
+      "depot": 309,
+      "locations": [
+        309,
+        97,
+        94,
+        72,
+        95,
+        113,
+        73,
+        115,
+        309
+      ],
+      "recorded_duration_minutes": 577.0,
+      "computed_duration_minutes": 577.0
+    },
+    {
+      "vehicle": "hq6_frc8",
+      "depot": 309,
+      "locations": [
+        309,
+        59,
+        30,
+        107,
+        58,
+        28,
+        50,
+        104,
+        309
+      ],
+      "recorded_duration_minutes": 569.0,
+      "computed_duration_minutes": 569.0
+    },
+    {
+      "vehicle": "hq7_frc1",
+      "depot": 310,
+      "locations": [
+        310,
+        253,
+        211,
+        147,
+        131,
+        266,
+        128,
+        161,
+        310
+      ],
+      "recorded_duration_minutes": 599.0,
+      "computed_duration_minutes": 599.0
+    },
+    {
+      "vehicle": "hq7_frc2",
+      "depot": 310,
+      "locations": [
+        310,
+        156,
+        129,
+        157,
+        286,
+        287,
+        284,
+        282,
+        310
+      ],
+      "recorded_duration_minutes": 596.0,
+      "computed_duration_minutes": 596.0
+    },
+    {
+      "vehicle": "hq7_frc3",
+      "depot": 310,
+      "locations": [
+        310,
+        153,
+        139,
+        140,
+        137,
+        141,
+        142,
+        310
+      ],
+      "recorded_duration_minutes": 559.0,
+      "computed_duration_minutes": 559.0
+    },
+    {
+      "vehicle": "hq7_frc4",
+      "depot": 310,
+      "locations": [
+        310,
+        148,
+        155,
+        152,
+        310
+      ],
+      "recorded_duration_minutes": 239.0,
+      "computed_duration_minutes": 239.0
+    },
+    {
+      "vehicle": "hq7_frc5",
+      "depot": 310,
+      "locations": [
+        310,
+        143,
+        145,
+        213,
+        212,
+        209,
+        130,
+        144,
+        310
+      ],
+      "recorded_duration_minutes": 545.0,
+      "computed_duration_minutes": 545.0
+    },
+    {
+      "vehicle": "hq7_frc6",
+      "depot": 310,
+      "locations": [
+        310,
+        151,
+        138,
+        135,
+        134,
+        136,
+        133,
+        132,
+        310
+      ],
+      "recorded_duration_minutes": 555.0,
+      "computed_duration_minutes": 555.0
+    },
+    {
+      "vehicle": "hq7_frc7",
+      "depot": 310,
+      "locations": [
+        310,
+        154,
+        310
+      ],
+      "recorded_duration_minutes": 82.0,
+      "computed_duration_minutes": 82.0
+    },
+    {
+      "vehicle": "hq7_frc8",
+      "depot": 310,
+      "locations": [
+        310,
+        160,
+        159,
+        162,
+        165,
+        163,
+        164,
+        310
+      ],
+      "recorded_duration_minutes": 523.0,
+      "computed_duration_minutes": 523.0
+    }
+  ],
+  "sha256_normalization": "File bytes with CRLF line endings normalized to LF, for cross-platform Git checkouts."
+}

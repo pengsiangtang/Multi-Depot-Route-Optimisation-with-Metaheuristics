@@ -1,0 +1,10 @@
+# Core notebook dependencies; original exact versions were not recorded.
+numpy
+pandas
+matplotlib
+folium
+scikit-learn
+googlemaps
+jupyterlab
+ipykernel
+ipython

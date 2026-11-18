@@ -1,0 +1,21 @@
+# Python and notebook temporary files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Local environments and credentials
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*.lic
+gurobi.env
+
+# Generated solver logs (the archived gurobi_log.txt remains tracked)
+my_gurobi_log.log
+
+# Operating system files
+Thumbs.db
+.DS_Store

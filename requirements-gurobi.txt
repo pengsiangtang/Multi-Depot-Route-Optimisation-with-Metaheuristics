@@ -1,0 +1,2 @@
+# Optional: requires a separately configured licence supporting the model size.
+gurobipy

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Routing 56 patrol vehicles across 304 Singapore subzones with simulated annealing. Explore the final routes, convergence and Gurobi benchmark.">
+  <title>Singapore Patrol Routing | Heuristics Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar wrap">
+    <a class="wordmark" href="#main"><span class="mark" aria-hidden="true">↗</span> Singapore Patrol Routing</a>
+    <nav aria-label="Main navigation"><a href="#routes">Routes</a><a href="#results">Results</a><a href="#about">About</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="title">
+      <p class="eyebrow">SUTD · Heuristics and Systems Theory · 2025</p>
+      <div class="hero-grid">
+        <div>
+          <h1 id="title">304 locations.<br>One night to cover them.</h1>
+          <p class="lead">How can 56 patrol vehicles cover Singapore within a ten-hour shift? We combine a greedy starting solution with simulated annealing to minimise travel time across seven headquarters.</p>
+          <a class="button" href="#routes">Explore the final routes <span aria-hidden="true">↓</span></a>
+        </div>
+        <aside class="result-highlight" aria-label="Final saved run">
+          <p class="eyebrow">Final saved run</p>
+          <p class="big-number">2,205<span>minutes of total travel</span></p>
+          <p>Across all 56 vehicles, after a one-hour search.</p>
+          <p class="verified"><span aria-hidden="true">✓</span> Coverage and route constraints checked</p>
+        </aside>
+      </div>
+      <dl class="metrics">
+        <div><dt>Patrol locations</dt><dd>304</dd></div>
+        <div><dt>Headquarters</dt><dd>7</dd></div>
+        <div><dt>Vehicles</dt><dd>56</dd></div>
+        <div><dt>Latest return</dt><dd>599 <span>/ 600 min</span></dd></div>
+      </dl>
+    </section>
+
+    <section id="routes" class="section wrap" aria-labelledby="routes-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / Explore</p><h2 id="routes-title">The final patrol routes</h2></div>
+        <a class="text-link" href="map.html" target="_blank" rel="noopener">Open map in a full tab ↗</a>
+      </div>
+      <p class="section-intro">Zoom into an area and hover over a route to see its vehicle ID. Each tour starts and ends at its assigned headquarters; colours group routes by headquarters.</p>
+      <div class="map-frame"><iframe src="map.html" title="Interactive map of the final 56 patrol routes in Singapore" loading="lazy"></iframe></div>
+      <p class="caption">Lines connect the visited locations in order; they do not trace road geometry. The objective uses driving travel times. Map tiles and map libraries need an internet connection. <a href="assets/figures/final-route-map.png">View the static map from the report</a>.</p>
+      <div class="verification">
+        <strong>Checked against the included data</strong>
+        <p>All 304 locations appear exactly once, all 56 routes return to their assigned headquarters, and every route finishes within 600 minutes. Recomputed travel time totals 2,205 minutes; the latest return is 599 minutes.</p>
+      </div>
+    </section>
+
+    <section id="results" class="section wrap" aria-labelledby="results-title">
+      <p class="eyebrow">02 / Results</p>
+      <h2 id="results-title">Fast improvements, then smaller gains</h2>
+      <div class="analysis-grid">
+        <figure class="chart"><img src="assets/figures/objective-convergence.png" width="640" height="480" alt="Objective value falls sharply from about 3,230 minutes, then levels off near 2,205 minutes during the one-hour search." loading="lazy"><figcaption>Original objective trace from the saved full-instance run.</figcaption></figure>
+        <div class="analysis-copy"><h3>Explore first. Refine next.</h3><p>The greedy solution gives the search a starting point. Simulated annealing accepts some worsening moves so it can escape local optima, while five neighbourhood operators rearrange the routes.</p><p>Travel time drops quickly at the start, with progressively smaller improvements as the search continues. The final saved objective is 2,205 minutes after a 3,600-second run.</p><p class="small">Run settings: initial temperature 1,000; inverse cooling; temperature updated every 30 iterations.</p></div>
+      </div>
+
+      <div class="benchmark">
+        <p class="eyebrow">A separate, smaller instance</p>
+        <h3>How close does the heuristic get?</h3>
+        <p>On 38 patrol locations with seven vehicles and seven headquarters, simulated annealing found a solution just four travel minutes above Gurobi's final incumbent, using a shorter run budget.</p>
+        <figure><a href="assets/figures/smaller-instance-comparison.png"><img src="assets/figures/smaller-instance-comparison.png" width="2160" height="936" alt="Smaller-instance comparison: Gurobi objective 454 in a five-hour run, simulated annealing objective 458 in a thirty-minute run, with a Gurobi lower bound of 436.40." loading="lazy"></a></figure>
+        <div class="table-scroll"><table><caption>Historical benchmark reported in Section 6(a)</caption><thead><tr><th scope="col">Method</th><th scope="col">Travel time</th><th scope="col">Run budget</th></tr></thead><tbody><tr><th scope="row">Gurobi</th><td>454 min</td><td>5 hours</td></tr><tr><th scope="row">Simulated annealing</th><td>458 min</td><td>30 minutes</td></tr></tbody></table></div>
+        <p class="caption">These are historical report values. The Gurobi solution was not proven optimal. Run budgets are not times to first or best solution, and the two methods were given different budgets.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section wrap about" aria-labelledby="about-title">
+      <div><p class="eyebrow">03 / About the study</p><h2 id="about-title">A routing problem with real constraints</h2><p>The model assigns each patrol location to one vehicle, keeps each vehicle attached to a headquarters, and includes both patrol duration and travel time in a ten-hour shift. Patrol durations are simulated, and this is an academic study rather than an operational police schedule.</p></div>
+      <div><h3>Team</h3><p>Carrie Tan · Chong Jun Hui · Tang Peng Siang</p><p class="small">40.018 Heuristics and Systems Theory<br>Singapore University of Technology and Design, 2025</p><a class="text-link" href="run-report.html">Open the original saved run report ↗</a></div>
+      <details><summary>Sources and verification notes</summary><p>The interactive map and objective trace come from <code>tsp_SAgreedy_report_20250707_001515.html</code>. The static map is Figure 12 of the final project report; the smaller-instance comparison is redrawn from its Section 6(a) table.</p><p>The saved run was checked against <code>T.csv</code> and <code>patrol timings.csv</code> for unique coverage, depot assignment, route duration and objective value. The report's prose lists a latest return of 559 minutes; the saved report and recomputed routes give 599 minutes. This page uses the saved-run value. The original PDF and experiment files are unchanged.</p><p><a href="assets/run-summary.json">Read the verification summary and source hashes</a>. The objective trace and benchmarks are historical; the optimisation was not rerun to build this page.</p></details>
+    </section>
+  </main>
+  <footer class="wrap footer"><span>Singapore Patrol Routing · 2025</span><span>Basemap © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a></span></footer>
+</body>
+</html>
