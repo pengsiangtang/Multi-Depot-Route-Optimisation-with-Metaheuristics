@@ -1,0 +1,2746 @@
+
+    <html>
+    <body>
+        <h1>TSP Report</h1>
+        <h3>Parameters</h3>
+            <p>Selection of Neighbourhood: Probabilistic Selecction</p>
+            <p>Number of Swap operators: 3651</p>
+                <ul>
+                <li>Acceptance rate: Random</li>
+                </ul>
+            <p>Number of Insertion operators: 300</p>
+                <ul>
+                <li>Acceptance rate: Random</li>
+                </ul> 
+            <p>Number of 2-opt operators: 51910</p> 
+                <ul>
+                <li>Acceptance rate: Random</li>
+                </ul>
+            <p>Number of Cross operators: 1565</p> 
+                <ul>
+                <li>Acceptance rate: Random</li>
+                </ul>
+            <p>Number of Or-Opt operators: 128</p> 
+                <ul>
+                <li>Acceptance rate: Random</li>
+                </ul>
+            <p>Initial Temperature:1500 </p>
+            <p>Update Temperature After 30 iterations</p>
+            <p>Update Temperature function using "T*(0.9999**iter)"</p>
+
+        <h3>Results</h3>
+            <p>Time Limit: 1800</p>
+            <p>Feasible: True</p>
+            <p>Objective Value: 2246.0</p>
+            <p>Latest Arrival Time: 598.0</p>
+            <p>No. of Locations Each FRC visits: between 1 and 7</p>
+        <h3>Matplotlib Plot</h3>
+            <img src="data:image/png;base64,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"/>
+        <h3>Folium Map</h3>
+        <div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_6944affa8eb75f44eb20491962d8ec8c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+
+            &lt;style&gt;html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            &lt;/style&gt;
+
+            &lt;style&gt;#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            &lt;/style&gt;
+
+            &lt;script&gt;
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            &lt;/script&gt;
+
+        
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_6944affa8eb75f44eb20491962d8ec8c&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_6944affa8eb75f44eb20491962d8ec8c = L.map(
+                &quot;map_6944affa8eb75f44eb20491962d8ec8c&quot;,
+                {
+                    center: [1.3521, 103.8198],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;zoom&quot;: 12,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_26b4abd307273b3ce00e1e12be84bfdf = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_26b4abd307273b3ce00e1e12be84bfdf.addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var poly_line_2dd7628494ac2247c03c1df52532f5d9 = L.polyline(
+                [[1.3773, 103.8458], [1.4212034, 103.84058396984425], [1.4198628, 103.83568386013128], [1.42645065, 103.83720383435042], [1.4293839, 103.8350282], [1.4293839, 103.8350282], [1.4293839, 103.8350282], [1.3773, 103.8458]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_2dd7628494ac2247c03c1df52532f5d9.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc1
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_dc35dac33efc52ee4d48c50f8786e485 = L.marker(
+                [1.3773, 103.8458],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_22f0c36cb08f00f71c42829b41544627 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_dc35dac33efc52ee4d48c50f8786e485.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc1 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_dc35dac33efc52ee4d48c50f8786e485.setIcon(icon_22f0c36cb08f00f71c42829b41544627);
+            
+    
+            var poly_line_2a5f14f444f3ae560f2f8122c598937d = L.polyline(
+                [[1.3281, 103.9323], [1.3174795, 103.89235252467483], [1.3174795, 103.89235252467483], [1.3174795, 103.89235252467483], [1.31579415, 103.88999334430754], [1.3181862, 103.8870563], [1.3164515, 103.8829087], [1.3281, 103.9323]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_2a5f14f444f3ae560f2f8122c598937d.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc2
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_8d74371d0a226b1e35535cef98625626 = L.marker(
+                [1.3281, 103.9323],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_3c5157477d923eea4c6f3057deb74ae9 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_8d74371d0a226b1e35535cef98625626.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc2 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_8d74371d0a226b1e35535cef98625626.setIcon(icon_3c5157477d923eea4c6f3057deb74ae9);
+            
+    
+            var poly_line_f6a02411817de4bb5b8d8869e3368ce6 = L.polyline(
+                [[1.2765, 103.839], [1.2801372, 103.8543912], [1.27958235, 103.8538296], [1.2835416999999998, 103.85146023266938], [1.285145, 103.8499586], [1.2839174, 103.8535246], [1.2796992, 103.8492984], [1.2765, 103.839]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_f6a02411817de4bb5b8d8869e3368ce6.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc3
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_ad42d6f5c31b03acf432e0ce913a6786 = L.marker(
+                [1.2765, 103.839],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_e4e32e6d1cfec4377a198d8067592e8d = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;green&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_ad42d6f5c31b03acf432e0ce913a6786.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc3 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_ad42d6f5c31b03acf432e0ce913a6786.setIcon(icon_e4e32e6d1cfec4377a198d8067592e8d);
+            
+    
+            var poly_line_bc222f610fa5debea8329e47b3dfac45 = L.polyline(
+                [[1.3114, 103.7605], [1.30562985, 103.72125142873976], [1.3135155, 103.72749677256806], [1.3038766, 103.7392193], [1.3114, 103.7605]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_bc222f610fa5debea8329e47b3dfac45.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc4
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_37e240b2b02ecc928fc539997f07070a = L.marker(
+                [1.3114, 103.7605],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_cf9ac8a0c9e0e015ad458507896807a9 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;purple&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_37e240b2b02ecc928fc539997f07070a.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc4 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_37e240b2b02ecc928fc539997f07070a.setIcon(icon_cf9ac8a0c9e0e015ad458507896807a9);
+            
+    
+            var poly_line_0836fbcacb47e9831b9c0d06285b6dbe = L.polyline(
+                [[1.3475, 103.7064], [1.34640455, 103.7122848123319], [1.3475, 103.7064]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_0836fbcacb47e9831b9c0d06285b6dbe.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc5
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_7a512aff6c0d847e4dad7322c8873ac3 = L.marker(
+                [1.3475, 103.7064],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_09e694bc5c17a10721753de45c796ade = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;orange&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_7a512aff6c0d847e4dad7322c8873ac3.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc5 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_7a512aff6c0d847e4dad7322c8873ac3.setIcon(icon_09e694bc5c17a10721753de45c796ade);
+            
+    
+            var poly_line_28501d861d36014834a091f2f78f0d64 = L.polyline(
+                [[1.3115, 103.8416], [1.29860845, 103.85012699630914], [1.3027586, 103.8502417], [1.30462805, 103.84755238344798], [1.30494005, 103.8488471522722], [1.3087228999999998, 103.84034211529688], [1.3119894, 103.8392897], [1.3115, 103.8416]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkred&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;darkred&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_28501d861d36014834a091f2f78f0d64.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc6
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_8fbad19d7e48fb150274ab83b5159733 = L.marker(
+                [1.3115, 103.8416],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_64727fabaf51bbfac5b4d4cab669e3d9 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;darkred&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_8fbad19d7e48fb150274ab83b5159733.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc6 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_8fbad19d7e48fb150274ab83b5159733.setIcon(icon_64727fabaf51bbfac5b4d4cab669e3d9);
+            
+    
+            var poly_line_e1811171d94ee4278548632e1999f602 = L.polyline(
+                [[1.4353, 103.786], [1.40519735, 103.90234976571602], [1.4066031, 103.90207073683268], [1.411265, 103.85213585565684], [1.4452954, 103.8497425], [1.4452954, 103.8497425], [1.4399652, 103.8047573433338], [1.4353, 103.786]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;cadetblue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;cadetblue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_e1811171d94ee4278548632e1999f602.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc7
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_8f47d441f9546afb0b394b0dd7b5fee7 = L.marker(
+                [1.4353, 103.786],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_4c64502c0b99c1640fb10c955a02d7d5 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_8f47d441f9546afb0b394b0dd7b5fee7.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc7 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_8f47d441f9546afb0b394b0dd7b5fee7.setIcon(icon_4c64502c0b99c1640fb10c955a02d7d5);
+            
+    
+            var poly_line_fef62219b4acb3d79aee7940fc5a7663 = L.polyline(
+                [[1.3773, 103.8458], [1.3817905, 103.8449359], [1.3773, 103.8458]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_fef62219b4acb3d79aee7940fc5a7663.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc8
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_165c6a3f1caacfc8bac98ec8726e0d1e = L.marker(
+                [1.3773, 103.8458],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_0d0c3a7942b5edeaf08d8abbea4685ef = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_165c6a3f1caacfc8bac98ec8726e0d1e.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc8 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_165c6a3f1caacfc8bac98ec8726e0d1e.setIcon(icon_0d0c3a7942b5edeaf08d8abbea4685ef);
+            
+    
+            var poly_line_1d66a699b4df22a7bc836fe9b71734b2 = L.polyline(
+                [[1.3281, 103.9323], [1.3344768, 103.91828105834637], [1.3360277, 103.9018509], [1.3296421, 103.89509490099816], [1.3395975, 103.8972723], [1.3611088, 103.9254612], [1.3281, 103.9323]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_1d66a699b4df22a7bc836fe9b71734b2.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc1
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_13a84e3afdcb03c5558fb790a5becb05 = L.marker(
+                [1.3281, 103.9323],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_6c4544c30a0376eafcc9ce8004a63419 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_13a84e3afdcb03c5558fb790a5becb05.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc1 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_13a84e3afdcb03c5558fb790a5becb05.setIcon(icon_6c4544c30a0376eafcc9ce8004a63419);
+            
+    
+            var poly_line_34404d234d34419ed10b6315bd66f565 = L.polyline(
+                [[1.2765, 103.839], [1.2896482, 103.8167677], [1.30420465, 103.81847174837526], [1.3132488, 103.8126998], [1.3040424000000002, 103.80208090009644], [1.2737957, 103.843473], [1.2765, 103.839]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_34404d234d34419ed10b6315bd66f565.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc2
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_4cddad91fe7c699ff8d69db93447966b = L.marker(
+                [1.2765, 103.839],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_9db7ca7a24456ae3c050835a34ba6f8c = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;green&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_4cddad91fe7c699ff8d69db93447966b.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc2 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_4cddad91fe7c699ff8d69db93447966b.setIcon(icon_9db7ca7a24456ae3c050835a34ba6f8c);
+            
+    
+            var poly_line_b8371001475a6899e3377c0f47811da6 = L.polyline(
+                [[1.3114, 103.7605], [1.3097878, 103.7929153], [1.3024428, 103.7983085], [1.2986733, 103.8047458], [1.3001567, 103.8007313], [1.2999069, 103.79810867117244], [1.30913695, 103.77814365807116], [1.3113893, 103.778605], [1.3114, 103.7605]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_b8371001475a6899e3377c0f47811da6.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc3
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_be7dd1dda84c7266cf2c5cfa41a419c8 = L.marker(
+                [1.3114, 103.7605],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_3ce514ec3bd4c0abb4cd4dff221068dd = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;purple&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_be7dd1dda84c7266cf2c5cfa41a419c8.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc3 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_be7dd1dda84c7266cf2c5cfa41a419c8.setIcon(icon_3ce514ec3bd4c0abb4cd4dff221068dd);
+            
+    
+            var poly_line_1abf5d5b0651ef3c1d7b4b8a9de307ed = L.polyline(
+                [[1.3475, 103.7064], [1.3253215, 103.7092754], [1.30546615, 103.70681074886411], [1.302728, 103.69742826207886], [1.319582, 103.6855598], [1.3196758, 103.6835888], [1.327735, 103.6782221], [1.3560409999999998, 103.69355526146067], [1.3475, 103.7064]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_1abf5d5b0651ef3c1d7b4b8a9de307ed.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc4
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_9c2b4743ec7791096afd12324ade24ca = L.marker(
+                [1.3475, 103.7064],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_10aaeb4175b72049ef6ff4fb325e4707 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;orange&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_9c2b4743ec7791096afd12324ade24ca.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc4 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_9c2b4743ec7791096afd12324ade24ca.setIcon(icon_10aaeb4175b72049ef6ff4fb325e4707);
+            
+    
+            var poly_line_998a8ca0cf1627aadaf02935835d1707 = L.polyline(
+                [[1.3115, 103.8416], [1.30684265, 103.84927355170905], [1.3035839, 103.8537716], [1.3057009, 103.8582073], [1.3136389, 103.86300121034482], [1.31956905, 103.86174867772831], [1.3314141, 103.8691380822365], [1.324875, 103.8681578], [1.3115, 103.8416]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkred&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;darkred&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_998a8ca0cf1627aadaf02935835d1707.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc5
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_dc15a45e2feb6c81144641c4685fe4a1 = L.marker(
+                [1.3115, 103.8416],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_3ebd473387f05b37bfa871950b329c68 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;darkred&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_dc15a45e2feb6c81144641c4685fe4a1.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc5 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_dc15a45e2feb6c81144641c4685fe4a1.setIcon(icon_3ebd473387f05b37bfa871950b329c68);
+            
+    
+            var poly_line_f4c8937927e5871961bfc38ed41b6a25 = L.polyline(
+                [[1.4353, 103.786], [1.3965351, 103.774025], [1.3651581, 103.7740781], [1.3314818, 103.8075163], [1.3217643, 103.8067901], [1.3273006, 103.8255594], [1.3294271, 103.8532782], [1.3326741, 103.85052221136596], [1.4353, 103.786]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;cadetblue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;cadetblue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_f4c8937927e5871961bfc38ed41b6a25.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc6
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_db75ba17d300614fc917b2764a15037f = L.marker(
+                [1.4353, 103.786],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_9e9078783764d3bc98fe1adc612d3b45 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_db75ba17d300614fc917b2764a15037f.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc6 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_db75ba17d300614fc917b2764a15037f.setIcon(icon_9e9078783764d3bc98fe1adc612d3b45);
+            
+    
+            var poly_line_d4213d34e21e1a50bd0751a74e073f1d = L.polyline(
+                [[1.3773, 103.8458], [1.35156575, 103.86386218385944], [1.3624579, 103.8660127], [1.3535142, 103.8716163518423], [1.3601757, 103.88511197287916], [1.3391943, 103.87082151823132], [1.34000855, 103.87451641160112], [1.33198165, 103.87447457471669], [1.3773, 103.8458]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_d4213d34e21e1a50bd0751a74e073f1d.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc7
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_41a02805858154dc43dc9b5a9d5b52ac = L.marker(
+                [1.3773, 103.8458],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_aaa1906f239aaa8e64b433c854f59d2e = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_41a02805858154dc43dc9b5a9d5b52ac.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc7 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_41a02805858154dc43dc9b5a9d5b52ac.setIcon(icon_aaa1906f239aaa8e64b433c854f59d2e);
+            
+    
+            var poly_line_f6bc472b85cf215f7fa8f89d5c03cf97 = L.polyline(
+                [[1.3281, 103.9323], [1.3210743, 103.8714391], [1.3082141, 103.865911], [1.30558585, 103.863087656683], [1.29983065, 103.86379908710182], [1.30734955, 103.86315267326368], [1.3026889, 103.9073952], [1.3016238, 103.9045983], [1.3281, 103.9323]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_f6bc472b85cf215f7fa8f89d5c03cf97.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc8
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_4edc518a456d5857febcbd52c6fd74a4 = L.marker(
+                [1.3281, 103.9323],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_bb11e1e571638839199be8bbe8269e9b = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_4edc518a456d5857febcbd52c6fd74a4.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc8 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_4edc518a456d5857febcbd52c6fd74a4.setIcon(icon_bb11e1e571638839199be8bbe8269e9b);
+            
+    
+            var poly_line_e0779a92b9fbc2eca02a9bf6cc822002 = L.polyline(
+                [[1.2765, 103.839], [1.2756728, 103.8335912761108], [1.26703035, 103.84874797936877], [1.2725019, 103.8118027], [1.2719239999999998, 103.81717519393024], [1.2642884, 103.8182609], [1.24894585, 103.83430564159272], [1.2765, 103.839]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_e0779a92b9fbc2eca02a9bf6cc822002.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc1
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_9878bc2896020c250b5db028a2706fb8 = L.marker(
+                [1.2765, 103.839],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_26d1d5007b6ab0f6ad1b5848a8a6a9d4 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;green&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_9878bc2896020c250b5db028a2706fb8.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc1 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_9878bc2896020c250b5db028a2706fb8.setIcon(icon_26d1d5007b6ab0f6ad1b5848a8a6a9d4);
+            
+    
+            var poly_line_304d6491da37f65260e4847b7db25070 = L.polyline(
+                [[1.3114, 103.7605], [1.3163699, 103.7813952], [1.310558, 103.7893244], [1.29954015, 103.78725843058068], [1.2933374, 103.78449364604651], [1.2962018, 103.7768994378476], [1.29980405, 103.76787306329608], [1.3114, 103.7605]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_304d6491da37f65260e4847b7db25070.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc2
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_621ecf51af947fcc28ab848e4c9674d8 = L.marker(
+                [1.3114, 103.7605],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_4d97d05e04e9813eaa0b0264dc3ded54 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;purple&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_621ecf51af947fcc28ab848e4c9674d8.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc2 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_621ecf51af947fcc28ab848e4c9674d8.setIcon(icon_4d97d05e04e9813eaa0b0264dc3ded54);
+            
+    
+            var poly_line_4b6cf276dc18fccb6f84eb84c9a08a04 = L.polyline(
+                [[1.3475, 103.7064], [1.34425, 103.7206931], [1.3347566, 103.72105557508152], [1.3347142, 103.7185508091162], [1.3333433499999998, 103.69396679099144], [1.33828435, 103.69108941866652], [1.3475, 103.7064]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_4b6cf276dc18fccb6f84eb84c9a08a04.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc3
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_614da23a41056192b2b05e650ddf650a = L.marker(
+                [1.3475, 103.7064],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_acae1052fc278567cb549f492b1f6dd9 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;orange&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_614da23a41056192b2b05e650ddf650a.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc3 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_614da23a41056192b2b05e650ddf650a.setIcon(icon_acae1052fc278567cb549f492b1f6dd9);
+            
+    
+            var poly_line_ecde794e285950f41afd994a7db7c64e = L.polyline(
+                [[1.3115, 103.8416], [1.3180495, 103.8501454], [1.32778935, 103.8502130374628], [1.326226, 103.8473149], [1.3353149, 103.8422739], [1.3400707, 103.84675837096586], [1.3370857, 103.85567994909928], [1.3397662, 103.8555817], [1.3115, 103.8416]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkred&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;darkred&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_ecde794e285950f41afd994a7db7c64e.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc4
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_247753a7c853c558425074bb965c5227 = L.marker(
+                [1.3115, 103.8416],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_2376dd8e2f60a737da28f6a77a5673ef = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;darkred&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_247753a7c853c558425074bb965c5227.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc4 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_247753a7c853c558425074bb965c5227.setIcon(icon_2376dd8e2f60a737da28f6a77a5673ef);
+            
+    
+            var poly_line_3abbba2262a735c5608fb45e4affe827 = L.polyline(
+                [[1.4353, 103.786], [1.4173597, 103.8330179], [1.4019703, 103.8228603], [1.3857511, 103.8279926939064], [1.3723986, 103.8290294792003], [1.3700592, 103.8034477], [1.4271409, 103.79429763815054], [1.42914215, 103.78123942679838], [1.4353, 103.786]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;cadetblue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;cadetblue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_3abbba2262a735c5608fb45e4affe827.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc5
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_f9c3c8ad77188ccfac1240889a02095d = L.marker(
+                [1.4353, 103.786],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_778218ce673e8e98ee67bf9b191ccb84 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_f9c3c8ad77188ccfac1240889a02095d.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc5 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_f9c3c8ad77188ccfac1240889a02095d.setIcon(icon_778218ce673e8e98ee67bf9b191ccb84);
+            
+    
+            var poly_line_d4ea7ea41338579ab0c3d0c2f12a6bae = L.polyline(
+                [[1.3773, 103.8458], [1.32620695, 103.88950695393876], [1.3353828, 103.8883060535578], [1.3355302, 103.8833207], [1.35161105, 103.89204505], [1.3520481, 103.8845867], [1.3710492, 103.89435758379814], [1.3854637, 103.8656683], [1.3773, 103.8458]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_d4ea7ea41338579ab0c3d0c2f12a6bae.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc6
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_71d2632f49ee46649cc60b90dbcaf3f8 = L.marker(
+                [1.3773, 103.8458],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_26b88b5df64eb66468e1f4fc9ef2791e = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_71d2632f49ee46649cc60b90dbcaf3f8.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc6 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_71d2632f49ee46649cc60b90dbcaf3f8.setIcon(icon_26b88b5df64eb66468e1f4fc9ef2791e);
+            
+    
+            var poly_line_775a63caa690db2b619c648977716078 = L.polyline(
+                [[1.3281, 103.9323], [1.3375104, 103.92895044430767], [1.3425058, 103.92522980731216], [1.345714, 103.93841347720615], [1.3753678, 103.9772924], [1.3753678, 103.9772924], [1.3544451, 103.9671735], [1.3281, 103.9323]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_775a63caa690db2b619c648977716078.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc7
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_550da4c8dcc716fedab6d5122b776000 = L.marker(
+                [1.3281, 103.9323],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_bbad6ac83e6237062a724cb9a20b8610 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_550da4c8dcc716fedab6d5122b776000.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc7 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_550da4c8dcc716fedab6d5122b776000.setIcon(icon_bbad6ac83e6237062a724cb9a20b8610);
+            
+    
+            var poly_line_677fb7f7d3793982fa001fed70d6ab86 = L.polyline(
+                [[1.2765, 103.839], [1.28617925, 103.8272252328584], [1.2860113, 103.8274107], [1.2879953, 103.82856441508396], [1.2952298, 103.8400656], [1.2962681, 103.84082700566428], [1.2874681, 103.8493612], [1.2882413, 103.84643040165231], [1.2765, 103.839]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_677fb7f7d3793982fa001fed70d6ab86.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc8
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_bb958c1a4d0cfca6177eaf0a91bbb9e4 = L.marker(
+                [1.2765, 103.839],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_b7c9b57d990926875579c985dad17036 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;green&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_bb958c1a4d0cfca6177eaf0a91bbb9e4.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc8 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_bb958c1a4d0cfca6177eaf0a91bbb9e4.setIcon(icon_b7c9b57d990926875579c985dad17036);
+            
+    
+            var poly_line_1ea6369d36b43a26a7465d607d9eb3c2 = L.polyline(
+                [[1.3114, 103.7605], [1.27620135, 103.7914758234202], [1.28086725, 103.78722032263292], [1.277477, 103.8018803], [1.277477, 103.8018803], [1.2869332, 103.80756011310469], [1.2818924, 103.805484], [1.3170586, 103.7554066], [1.3114, 103.7605]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_1ea6369d36b43a26a7465d607d9eb3c2.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc1
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_283f19e75f67df892dae5e9d31121cca = L.marker(
+                [1.3114, 103.7605],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_b30d88da41b83dde012133f3de21b741 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;purple&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_283f19e75f67df892dae5e9d31121cca.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc1 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_283f19e75f67df892dae5e9d31121cca.setIcon(icon_b30d88da41b83dde012133f3de21b741);
+            
+    
+            var poly_line_a8edc1e5974e81960fcf03d3619e0fc3 = L.polyline(
+                [[1.3475, 103.7064], [1.3847493, 103.7445341], [1.3810147, 103.7469398], [1.3797195, 103.7524944], [1.3786034, 103.7490207], [1.3818691, 103.76583028326876], [1.3782832, 103.7647387], [1.3974608, 103.7474009], [1.3475, 103.7064]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_a8edc1e5974e81960fcf03d3619e0fc3.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc2
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_451db3f988dbce76eb6938a754ff54be = L.marker(
+                [1.3475, 103.7064],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_7ee132d601a74763319625597fc07d13 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;orange&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_451db3f988dbce76eb6938a754ff54be.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc2 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_451db3f988dbce76eb6938a754ff54be.setIcon(icon_7ee132d601a74763319625597fc07d13);
+            
+    
+            var poly_line_ed98647bed76b4c1069d934b7570c1fd = L.polyline(
+                [[1.3115, 103.8416], [1.30128, 103.8599267], [1.288624, 103.869827], [1.288624, 103.869827], [1.29734275, 103.87376426134357], [1.3063254, 103.88272779279126], [1.3249544, 103.8767546], [1.3115, 103.8416]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkred&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;darkred&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_ed98647bed76b4c1069d934b7570c1fd.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc3
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_7d3bef5cfe302292d7dd130057ee8d55 = L.marker(
+                [1.3115, 103.8416],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_38840fdacf7ace9265bf2a843279ae15 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;darkred&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_7d3bef5cfe302292d7dd130057ee8d55.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc3 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_7d3bef5cfe302292d7dd130057ee8d55.setIcon(icon_38840fdacf7ace9265bf2a843279ae15);
+            
+    
+            var poly_line_35dde0659255d018f997c1946000fbed = L.polyline(
+                [[1.4353, 103.786], [1.4490928, 103.8200555], [1.4490928, 103.8200555], [1.4490928, 103.8200555], [1.4490928, 103.8200555], [1.4406369, 103.8009592], [1.436897, 103.786216], [1.4353, 103.786]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;cadetblue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;cadetblue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_35dde0659255d018f997c1946000fbed.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc4
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_d7db504e33c962573aa30948e9454ad0 = L.marker(
+                [1.4353, 103.786],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_645120fe7895ad345b263e94cc6f9976 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_d7db504e33c962573aa30948e9454ad0.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc4 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_d7db504e33c962573aa30948e9454ad0.setIcon(icon_645120fe7895ad345b263e94cc6f9976);
+            
+    
+            var poly_line_0af106142cf093f2af00788a35e98cbb = L.polyline(
+                [[1.3773, 103.8458], [1.3713383, 103.8727563], [1.3708011, 103.89254433997463], [1.3708011, 103.89254433997463], [1.38062345, 103.8984008073542], [1.3839286, 103.9022055], [1.394518, 103.9004349], [1.4031177499999998, 103.89331627547394], [1.3773, 103.8458]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_0af106142cf093f2af00788a35e98cbb.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc5
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_9dfadfb9102f2a497eded97e441f5b99 = L.marker(
+                [1.3773, 103.8458],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_a8824a00fd93b5b243b40883cdfccb83 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_9dfadfb9102f2a497eded97e441f5b99.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc5 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_9dfadfb9102f2a497eded97e441f5b99.setIcon(icon_a8824a00fd93b5b243b40883cdfccb83);
+            
+    
+            var poly_line_d9166376210bcb465643d177b95f51fc = L.polyline(
+                [[1.3281, 103.9323], [1.3431881, 103.953371], [1.3560169, 103.95514185282089], [1.37898635, 103.95037978854626], [1.3722599, 103.9487891], [1.3730307, 103.949255], [1.3730307, 103.949255], [1.3690124, 103.93809295626107], [1.3281, 103.9323]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_d9166376210bcb465643d177b95f51fc.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc6
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_949a41a2c6ce789ce365f936b538f414 = L.marker(
+                [1.3281, 103.9323],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_3a3108cc20e09ffdcb6d738789390a78 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_949a41a2c6ce789ce365f936b538f414.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc6 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_949a41a2c6ce789ce365f936b538f414.setIcon(icon_3a3108cc20e09ffdcb6d738789390a78);
+            
+    
+            var poly_line_1a4942d7307f3379d6c0e4e73c3295e7 = L.polyline(
+                [[1.2765, 103.839], [1.2831661, 103.8415181], [1.2837372, 103.8437976], [1.2806012999999998, 103.84403801875], [1.27660565, 103.84577931609854], [1.2834925, 103.8465903], [1.28489795, 103.8398283978549], [1.2853894, 103.8330860973877], [1.2765, 103.839]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_1a4942d7307f3379d6c0e4e73c3295e7.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc7
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_2fae9a51d699927db798a0593da1b7d2 = L.marker(
+                [1.2765, 103.839],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_fc5cddbb48e1049d37fa9163fa7a7eb5 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;green&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_2fae9a51d699927db798a0593da1b7d2.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc7 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_2fae9a51d699927db798a0593da1b7d2.setIcon(icon_fc5cddbb48e1049d37fa9163fa7a7eb5);
+            
+    
+            var poly_line_9acdb88a7f144d0efbfb9670b11cade2 = L.polyline(
+                [[1.3114, 103.7605], [1.3219375, 103.77016366964884], [1.3292738, 103.77621307459358], [1.34514795, 103.79185617216838], [1.3429964, 103.7906466], [1.3175122, 103.7964628], [1.3101133, 103.8047651], [1.2921169, 103.8021062], [1.3114, 103.7605]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_9acdb88a7f144d0efbfb9670b11cade2.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc8
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_4ec2a038df7b994379a0e1c0a24482d8 = L.marker(
+                [1.3114, 103.7605],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_55960102ccac53f1f7cf1c56e32c090c = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;purple&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_4ec2a038df7b994379a0e1c0a24482d8.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc8 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_4ec2a038df7b994379a0e1c0a24482d8.setIcon(icon_55960102ccac53f1f7cf1c56e32c090c);
+            
+    
+            var poly_line_550e1ee65bb2a00d53817d5d77008abf = L.polyline(
+                [[1.3475, 103.7064], [1.3568939, 103.6996748], [1.3826778, 103.7623822], [1.3845519, 103.765812], [1.3845932, 103.7708754], [1.3800412, 103.7726501], [1.3624042, 103.76742729372796], [1.3358173, 103.7754302], [1.3475, 103.7064]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_550e1ee65bb2a00d53817d5d77008abf.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc1
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_ac6f8d7c59cdbda2f8f24bec2184a1f9 = L.marker(
+                [1.3475, 103.7064],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_90188140d668f30b433842a85c496668 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;orange&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_ac6f8d7c59cdbda2f8f24bec2184a1f9.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc1 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_ac6f8d7c59cdbda2f8f24bec2184a1f9.setIcon(icon_90188140d668f30b433842a85c496668);
+            
+    
+            var poly_line_d35459c832be3ab17163f66b5369036a = L.polyline(
+                [[1.3115, 103.8416], [1.3082222, 103.8341091], [1.30038375, 103.8388284758278], [1.29955225, 103.84533749528336], [1.31259105, 103.8542288478267], [1.31259105, 103.8542288478267], [1.3139715, 103.8454729], [1.307056, 103.837803], [1.3115, 103.8416]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkred&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;darkred&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_d35459c832be3ab17163f66b5369036a.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc2
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_3ceac1a4086c4a3d6cd92013e2aebf45 = L.marker(
+                [1.3115, 103.8416],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_9adff25f0724b5db5d4a19c9d165ace8 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;darkred&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_3ceac1a4086c4a3d6cd92013e2aebf45.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc2 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_3ceac1a4086c4a3d6cd92013e2aebf45.setIcon(icon_9adff25f0724b5db5d4a19c9d165ace8);
+            
+    
+            var poly_line_bbc9795b4dfaea997aef6aec524a520f = L.polyline(
+                [[1.4353, 103.786], [1.4439796, 103.7869376653084], [1.4602965, 103.8052452], [1.4616637, 103.83038319442856], [1.458458, 103.83740461856748], [1.4602965, 103.8052452], [1.4602965, 103.8052452], [1.4353, 103.786]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;cadetblue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;cadetblue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_bbc9795b4dfaea997aef6aec524a520f.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc3
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_ad2a88211785a6a27234d69da96875e6 = L.marker(
+                [1.4353, 103.786],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_365a7b6a17ffc5e5fb076b105cb28e51 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_ad2a88211785a6a27234d69da96875e6.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc3 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_ad2a88211785a6a27234d69da96875e6.setIcon(icon_365a7b6a17ffc5e5fb076b105cb28e51);
+            
+    
+            var poly_line_2e8b2ab0535e76b2b705844ea520c787 = L.polyline(
+                [[1.3773, 103.8458], [1.3904635, 103.8770826], [1.3939487000000002, 103.88667598546894], [1.3919236499999998, 103.89549093760694], [1.4198936, 103.8904904], [1.4251234, 103.8789977], [1.42044605, 103.88150867318316], [1.4087181, 103.8682223], [1.3773, 103.8458]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_2e8b2ab0535e76b2b705844ea520c787.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc4
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_00775de76bed1f5301415297caa60b1a = L.marker(
+                [1.3773, 103.8458],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_4c5cc6d778c741206de41870991beacf = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_00775de76bed1f5301415297caa60b1a.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc4 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_00775de76bed1f5301415297caa60b1a.setIcon(icon_4c5cc6d778c741206de41870991beacf);
+            
+    
+            var poly_line_9f3ac79bece8a9636bbc5c7e8991085c = L.polyline(
+                [[1.3281, 103.9323], [1.35755735, 103.98847034565972], [1.35211085, 103.98701251855138], [1.35211085, 103.98701251855138], [1.3168496, 104.0206494], [1.3286407, 103.96441665942385], [1.31641095, 103.9491055866304], [1.3128118, 103.93903292138398], [1.3281, 103.9323]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_9f3ac79bece8a9636bbc5c7e8991085c.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc5
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_24fbd3f3ef4e3a29014a3ff5cbea60be = L.marker(
+                [1.3281, 103.9323],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_61c3f4ecadf2f12fe0835cf9c69a150d = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_24fbd3f3ef4e3a29014a3ff5cbea60be.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc5 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_24fbd3f3ef4e3a29014a3ff5cbea60be.setIcon(icon_61c3f4ecadf2f12fe0835cf9c69a150d);
+            
+    
+            var poly_line_4006a5a0f78ccdb70e5214e068e9449a = L.polyline(
+                [[1.2765, 103.839], [1.26703035, 103.84874797936877], [1.2708084, 103.8302517], [1.274615, 103.8228471], [1.2748641, 103.8202761], [1.2733393, 103.8206709], [1.28115755, 103.82106078273196], [1.27944885, 103.83628049727405], [1.2765, 103.839]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_4006a5a0f78ccdb70e5214e068e9449a.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc6
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_048c7f89f75a44a03d8653626ca28d80 = L.marker(
+                [1.2765, 103.839],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_6bc0e47078216d2a9e9a0381bf2961fd = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;green&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_048c7f89f75a44a03d8653626ca28d80.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc6 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_048c7f89f75a44a03d8653626ca28d80.setIcon(icon_6bc0e47078216d2a9e9a0381bf2961fd);
+            
+    
+            var poly_line_f2f962f503be46c7d6d57b55b158ec97 = L.polyline(
+                [[1.3114, 103.7605], [1.3309244, 103.75759268038152], [1.3399884, 103.7515124], [1.34495555, 103.73101531931654], [1.34495555, 103.73101531931654], [1.3553973, 103.7214297], [1.3553973, 103.7214297], [1.3114, 103.7605]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_f2f962f503be46c7d6d57b55b158ec97.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc7
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_32c155dcb539d59f67f3ef88cc34db0c = L.marker(
+                [1.3114, 103.7605],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_e805905b44ea30018fd03673cb3a08c6 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;purple&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_32c155dcb539d59f67f3ef88cc34db0c.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc7 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_32c155dcb539d59f67f3ef88cc34db0c.setIcon(icon_e805905b44ea30018fd03673cb3a08c6);
+            
+    
+            var poly_line_e1b5f4ed27cb042933da33c061d6d5ff = L.polyline(
+                [[1.3475, 103.7064], [1.376053, 103.7355019], [1.3588929, 103.7518249], [1.3490572, 103.7495906], [1.3490572, 103.7495906], [1.34844155, 103.7463789473274], [1.3455305, 103.7397329], [1.3475, 103.7064]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_e1b5f4ed27cb042933da33c061d6d5ff.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc8
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_fddb37915254d56bf42be72eb17c99a8 = L.marker(
+                [1.3475, 103.7064],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_8f34cc54645a462b7ef4d3e0d73e0588 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;orange&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_fddb37915254d56bf42be72eb17c99a8.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc8 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_fddb37915254d56bf42be72eb17c99a8.setIcon(icon_8f34cc54645a462b7ef4d3e0d73e0588);
+            
+    
+            var poly_line_cd342ba9ada6c2252f91f4f7aac022ec = L.polyline(
+                [[1.3115, 103.8416], [1.30030955, 103.83061642302155], [1.296433, 103.83262], [1.300066, 103.8247268], [1.30659285, 103.82299205452576], [1.3112474, 103.8267568], [1.3225026, 103.82646865312144], [1.3210897, 103.82786731298656], [1.3115, 103.8416]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkred&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;darkred&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_cd342ba9ada6c2252f91f4f7aac022ec.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc1
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_6ab091c26fdae1c98ef1e1f165246253 = L.marker(
+                [1.3115, 103.8416],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_d328650103a996c38a8dcf387b3d68fd = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;darkred&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_6ab091c26fdae1c98ef1e1f165246253.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc1 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_6ab091c26fdae1c98ef1e1f165246253.setIcon(icon_d328650103a996c38a8dcf387b3d68fd);
+            
+    
+            var poly_line_bed718d5743a3beef70bf9cbeb3caaf3 = L.polyline(
+                [[1.4353, 103.786], [1.4252189, 103.7619891], [1.4080963999999998, 103.75834217696064], [1.4037076, 103.79403742902612], [1.4015479, 103.79494265078904], [1.4220553, 103.76418206903227], [1.4235346, 103.8033499], [1.4235346, 103.8033499], [1.4353, 103.786]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;cadetblue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;cadetblue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_bed718d5743a3beef70bf9cbeb3caaf3.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc2
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_fb24d77e641681379ab6d7d8b7e06e6c = L.marker(
+                [1.4353, 103.786],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_2bc99d84d687e16019060eabf33c32f7 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_fb24d77e641681379ab6d7d8b7e06e6c.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc2 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_fb24d77e641681379ab6d7d8b7e06e6c.setIcon(icon_2bc99d84d687e16019060eabf33c32f7);
+            
+    
+            var poly_line_7f23508d42ebd17230c5de00ac034646 = L.polyline(
+                [[1.3773, 103.8458], [1.34860435, 103.83939255166877], [1.3529096, 103.8362889], [1.35463855, 103.83251239866786], [1.359286, 103.83403591176392], [1.357107, 103.8194992], [1.357107, 103.8194992], [1.36790975, 103.8369151909007], [1.3773, 103.8458]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_7f23508d42ebd17230c5de00ac034646.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc3
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_7cabd6b43ec19dccb320bffe79b4fddb = L.marker(
+                [1.3773, 103.8458],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_f93b89bf6e9c403e8241ff1a231e4084 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_7cabd6b43ec19dccb320bffe79b4fddb.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc3 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_7cabd6b43ec19dccb320bffe79b4fddb.setIcon(icon_f93b89bf6e9c403e8241ff1a231e4084);
+            
+    
+            var poly_line_72843b2ceaa58a4c86779cb4ee3a8b4a = L.polyline(
+                [[1.3281, 103.9323], [1.3210321, 103.9129269], [1.3104654, 103.9235132], [1.3114476, 103.9204439], [1.3176986, 103.9185698], [1.3281, 103.9323]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_72843b2ceaa58a4c86779cb4ee3a8b4a.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc4
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_b5b42e6a68013cda09a1c303a6a604b3 = L.marker(
+                [1.3281, 103.9323],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_b28e4e8e0aad1de6a8be54ab71777317 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_b5b42e6a68013cda09a1c303a6a604b3.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc4 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_b5b42e6a68013cda09a1c303a6a604b3.setIcon(icon_b28e4e8e0aad1de6a8be54ab71777317);
+            
+    
+            var poly_line_7fe4455dc6c751b229b767b52b06bf1d = L.polyline(
+                [[1.2765, 103.839], [1.2917517, 103.8413036], [1.2923829, 103.8442419564924], [1.29616795, 103.85004365998248], [1.2968214, 103.850665833196], [1.2930272, 103.85264479617268], [1.2999533, 103.85527814689878], [1.277063, 103.86823472654692], [1.2765, 103.839]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_7fe4455dc6c751b229b767b52b06bf1d.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc5
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_0bb637b83241529ff87601c839b9f093 = L.marker(
+                [1.2765, 103.839],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_7c7ec715430908f3f5644f5aafaca646 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;green&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_0bb637b83241529ff87601c839b9f093.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc5 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_0bb637b83241529ff87601c839b9f093.setIcon(icon_7c7ec715430908f3f5644f5aafaca646);
+            
+    
+            var poly_line_b812430688610c3eee675750783d20ce = L.polyline(
+                [[1.3114, 103.7605], [1.3151003, 103.7652311], [1.3151003, 103.7652311], [1.3151003, 103.7652311], [1.3273734, 103.74761062795277], [1.33223555, 103.7407863977851], [1.32089305, 103.73793421271182], [1.3114, 103.7605]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_b812430688610c3eee675750783d20ce.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc6
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_30dfba6068b0578e09fa2d1f66f124e5 = L.marker(
+                [1.3114, 103.7605],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_efc63bfd9d2b239dee3f36082d726853 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;purple&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_30dfba6068b0578e09fa2d1f66f124e5.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc6 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_30dfba6068b0578e09fa2d1f66f124e5.setIcon(icon_efc63bfd9d2b239dee3f36082d726853);
+            
+    
+            var poly_line_5f3fde11ece8c70a9cbc0a261bc82c99 = L.polyline(
+                [[1.3475, 103.7064], [1.34623395, 103.64659342437628], [1.3300518, 103.6395694], [1.3300518, 103.6395694], [1.3300518, 103.6395694], [1.3196353, 103.6606551], [1.3304504, 103.6834422], [1.3396365, 103.7073387], [1.3475, 103.7064]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_5f3fde11ece8c70a9cbc0a261bc82c99.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc7
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_6992ca30d86d46d4b006f5f3db841765 = L.marker(
+                [1.3475, 103.7064],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_9c22749b16e01a652f328b507bd072f3 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;orange&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_6992ca30d86d46d4b006f5f3db841765.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc7 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_6992ca30d86d46d4b006f5f3db841765.setIcon(icon_9c22749b16e01a652f328b507bd072f3);
+            
+    
+            var poly_line_1b3c2f15f8513027683c55e416f8bea0 = L.polyline(
+                [[1.3115, 103.8416], [1.31353095, 103.8266548476678], [1.3115, 103.8416]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkred&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;darkred&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_1b3c2f15f8513027683c55e416f8bea0.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc8
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_bdacd7aa68813619d105c7690d3ef00d = L.marker(
+                [1.3115, 103.8416],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_a92492a0151f23bb42cf9b2a05079718 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;darkred&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_bdacd7aa68813619d105c7690d3ef00d.bindTooltip(
+                `&lt;div&gt;
+                     hq6_frc8 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_bdacd7aa68813619d105c7690d3ef00d.setIcon(icon_a92492a0151f23bb42cf9b2a05079718);
+            
+    
+            var poly_line_58c920b44109bbc671d9d58c3edb7553 = L.polyline(
+                [[1.4353, 103.786], [1.4349069, 103.7871926], [1.4353, 103.786]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;cadetblue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;cadetblue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_58c920b44109bbc671d9d58c3edb7553.bindTooltip(
+                `&lt;div&gt;
+                     hq7_frc1
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_1bb4ba6079a5cfb86ed64d43f1c3e866 = L.marker(
+                [1.4353, 103.786],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_01ea465532a317ceea96999eff896ed4 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_1bb4ba6079a5cfb86ed64d43f1c3e866.bindTooltip(
+                `&lt;div&gt;
+                     hq7_frc1 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_1bb4ba6079a5cfb86ed64d43f1c3e866.setIcon(icon_01ea465532a317ceea96999eff896ed4);
+            
+    
+            var poly_line_65a5fa7a318951aeb9d9904459d0f291 = L.polyline(
+                [[1.3773, 103.8458], [1.3712845, 103.84699364624538], [1.3519117, 103.8489708], [1.3603771, 103.8538821884711], [1.36820695, 103.85636035693712], [1.3817905, 103.8449359], [1.3817905, 103.8449359], [1.3817905, 103.8449359], [1.3773, 103.8458]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_65a5fa7a318951aeb9d9904459d0f291.bindTooltip(
+                `&lt;div&gt;
+                     hq7_frc2
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_a15307acf12848616bc3f17884b336cd = L.marker(
+                [1.3773, 103.8458],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_a24371c18a0eb1b2bcf4b18c16ef9801 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_a15307acf12848616bc3f17884b336cd.bindTooltip(
+                `&lt;div&gt;
+                     hq7_frc2 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_a15307acf12848616bc3f17884b336cd.setIcon(icon_a24371c18a0eb1b2bcf4b18c16ef9801);
+            
+    
+            var poly_line_4fe0c21c61b6af8cc4c2315c02de3eec = L.polyline(
+                [[1.3281, 103.9323], [1.3925784, 103.9141121], [1.40941835, 103.9214699987144], [1.4094274, 103.90746874732268], [1.41787695, 103.90129930284184], [1.3898856, 103.92327164949884], [1.3952878, 103.92762588504549], [1.3281, 103.9323]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_4fe0c21c61b6af8cc4c2315c02de3eec.bindTooltip(
+                `&lt;div&gt;
+                     hq7_frc3
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_4eaaea287c8c57269d72e95650193bb6 = L.marker(
+                [1.3281, 103.9323],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_f8550b5c5da07e133962ae7145501529 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_4eaaea287c8c57269d72e95650193bb6.bindTooltip(
+                `&lt;div&gt;
+                     hq7_frc3 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_4eaaea287c8c57269d72e95650193bb6.setIcon(icon_f8550b5c5da07e133962ae7145501529);
+            
+    
+            var poly_line_2a49b1884e0e4493b7c6a4e4c3cd0fb0 = L.polyline(
+                [[1.2765, 103.839], [1.2771286000000002, 103.8393679151902], [1.2765, 103.839]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            poly_line_2a49b1884e0e4493b7c6a4e4c3cd0fb0.bindTooltip(
+                `&lt;div&gt;
+                     hq7_frc4
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_85db181aee63b46b7830b877e65e9a73 = L.marker(
+                [1.2765, 103.839],
+                {
+}
+            ).addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+            var icon_6569fe4ab43495848ac4fbe6b99389c4 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;green&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_85db181aee63b46b7830b877e65e9a73.bindTooltip(
+                `&lt;div&gt;
+                     hq7_frc4 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_85db181aee63b46b7830b877e65e9a73.setIcon(icon_6569fe4ab43495848ac4fbe6b99389c4);
+            
+    
+            tile_layer_26b4abd307273b3ce00e1e12be84bfdf.addTo(map_6944affa8eb75f44eb20491962d8ec8c);
+        
+    
+                marker_dc35dac33efc52ee4d48c50f8786e485.setIcon(icon_22f0c36cb08f00f71c42829b41544627);
+            
+    
+                marker_8d74371d0a226b1e35535cef98625626.setIcon(icon_3c5157477d923eea4c6f3057deb74ae9);
+            
+    
+                marker_ad42d6f5c31b03acf432e0ce913a6786.setIcon(icon_e4e32e6d1cfec4377a198d8067592e8d);
+            
+    
+                marker_37e240b2b02ecc928fc539997f07070a.setIcon(icon_cf9ac8a0c9e0e015ad458507896807a9);
+            
+    
+                marker_7a512aff6c0d847e4dad7322c8873ac3.setIcon(icon_09e694bc5c17a10721753de45c796ade);
+            
+    
+                marker_8fbad19d7e48fb150274ab83b5159733.setIcon(icon_64727fabaf51bbfac5b4d4cab669e3d9);
+            
+    
+                marker_8f47d441f9546afb0b394b0dd7b5fee7.setIcon(icon_4c64502c0b99c1640fb10c955a02d7d5);
+            
+    
+                marker_165c6a3f1caacfc8bac98ec8726e0d1e.setIcon(icon_0d0c3a7942b5edeaf08d8abbea4685ef);
+            
+    
+                marker_13a84e3afdcb03c5558fb790a5becb05.setIcon(icon_6c4544c30a0376eafcc9ce8004a63419);
+            
+    
+                marker_4cddad91fe7c699ff8d69db93447966b.setIcon(icon_9db7ca7a24456ae3c050835a34ba6f8c);
+            
+    
+                marker_be7dd1dda84c7266cf2c5cfa41a419c8.setIcon(icon_3ce514ec3bd4c0abb4cd4dff221068dd);
+            
+    
+                marker_9c2b4743ec7791096afd12324ade24ca.setIcon(icon_10aaeb4175b72049ef6ff4fb325e4707);
+            
+    
+                marker_dc15a45e2feb6c81144641c4685fe4a1.setIcon(icon_3ebd473387f05b37bfa871950b329c68);
+            
+    
+                marker_db75ba17d300614fc917b2764a15037f.setIcon(icon_9e9078783764d3bc98fe1adc612d3b45);
+            
+    
+                marker_41a02805858154dc43dc9b5a9d5b52ac.setIcon(icon_aaa1906f239aaa8e64b433c854f59d2e);
+            
+    
+                marker_4edc518a456d5857febcbd52c6fd74a4.setIcon(icon_bb11e1e571638839199be8bbe8269e9b);
+            
+    
+                marker_9878bc2896020c250b5db028a2706fb8.setIcon(icon_26d1d5007b6ab0f6ad1b5848a8a6a9d4);
+            
+    
+                marker_621ecf51af947fcc28ab848e4c9674d8.setIcon(icon_4d97d05e04e9813eaa0b0264dc3ded54);
+            
+    
+                marker_614da23a41056192b2b05e650ddf650a.setIcon(icon_acae1052fc278567cb549f492b1f6dd9);
+            
+    
+                marker_247753a7c853c558425074bb965c5227.setIcon(icon_2376dd8e2f60a737da28f6a77a5673ef);
+            
+    
+                marker_f9c3c8ad77188ccfac1240889a02095d.setIcon(icon_778218ce673e8e98ee67bf9b191ccb84);
+            
+    
+                marker_71d2632f49ee46649cc60b90dbcaf3f8.setIcon(icon_26b88b5df64eb66468e1f4fc9ef2791e);
+            
+    
+                marker_550da4c8dcc716fedab6d5122b776000.setIcon(icon_bbad6ac83e6237062a724cb9a20b8610);
+            
+    
+                marker_bb958c1a4d0cfca6177eaf0a91bbb9e4.setIcon(icon_b7c9b57d990926875579c985dad17036);
+            
+    
+                marker_283f19e75f67df892dae5e9d31121cca.setIcon(icon_b30d88da41b83dde012133f3de21b741);
+            
+    
+                marker_451db3f988dbce76eb6938a754ff54be.setIcon(icon_7ee132d601a74763319625597fc07d13);
+            
+    
+                marker_7d3bef5cfe302292d7dd130057ee8d55.setIcon(icon_38840fdacf7ace9265bf2a843279ae15);
+            
+    
+                marker_d7db504e33c962573aa30948e9454ad0.setIcon(icon_645120fe7895ad345b263e94cc6f9976);
+            
+    
+                marker_9dfadfb9102f2a497eded97e441f5b99.setIcon(icon_a8824a00fd93b5b243b40883cdfccb83);
+            
+    
+                marker_949a41a2c6ce789ce365f936b538f414.setIcon(icon_3a3108cc20e09ffdcb6d738789390a78);
+            
+    
+                marker_2fae9a51d699927db798a0593da1b7d2.setIcon(icon_fc5cddbb48e1049d37fa9163fa7a7eb5);
+            
+    
+                marker_4ec2a038df7b994379a0e1c0a24482d8.setIcon(icon_55960102ccac53f1f7cf1c56e32c090c);
+            
+    
+                marker_ac6f8d7c59cdbda2f8f24bec2184a1f9.setIcon(icon_90188140d668f30b433842a85c496668);
+            
+    
+                marker_3ceac1a4086c4a3d6cd92013e2aebf45.setIcon(icon_9adff25f0724b5db5d4a19c9d165ace8);
+            
+    
+                marker_ad2a88211785a6a27234d69da96875e6.setIcon(icon_365a7b6a17ffc5e5fb076b105cb28e51);
+            
+    
+                marker_00775de76bed1f5301415297caa60b1a.setIcon(icon_4c5cc6d778c741206de41870991beacf);
+            
+    
+                marker_24fbd3f3ef4e3a29014a3ff5cbea60be.setIcon(icon_61c3f4ecadf2f12fe0835cf9c69a150d);
+            
+    
+                marker_048c7f89f75a44a03d8653626ca28d80.setIcon(icon_6bc0e47078216d2a9e9a0381bf2961fd);
+            
+    
+                marker_32c155dcb539d59f67f3ef88cc34db0c.setIcon(icon_e805905b44ea30018fd03673cb3a08c6);
+            
+    
+                marker_fddb37915254d56bf42be72eb17c99a8.setIcon(icon_8f34cc54645a462b7ef4d3e0d73e0588);
+            
+    
+                marker_6ab091c26fdae1c98ef1e1f165246253.setIcon(icon_d328650103a996c38a8dcf387b3d68fd);
+            
+    
+                marker_fb24d77e641681379ab6d7d8b7e06e6c.setIcon(icon_2bc99d84d687e16019060eabf33c32f7);
+            
+    
+                marker_7cabd6b43ec19dccb320bffe79b4fddb.setIcon(icon_f93b89bf6e9c403e8241ff1a231e4084);
+            
+    
+                marker_b5b42e6a68013cda09a1c303a6a604b3.setIcon(icon_b28e4e8e0aad1de6a8be54ab71777317);
+            
+    
+                marker_0bb637b83241529ff87601c839b9f093.setIcon(icon_7c7ec715430908f3f5644f5aafaca646);
+            
+    
+                marker_30dfba6068b0578e09fa2d1f66f124e5.setIcon(icon_efc63bfd9d2b239dee3f36082d726853);
+            
+    
+                marker_6992ca30d86d46d4b006f5f3db841765.setIcon(icon_9c22749b16e01a652f328b507bd072f3);
+            
+    
+                marker_bdacd7aa68813619d105c7690d3ef00d.setIcon(icon_a92492a0151f23bb42cf9b2a05079718);
+            
+    
+                marker_1bb4ba6079a5cfb86ed64d43f1c3e866.setIcon(icon_01ea465532a317ceea96999eff896ed4);
+            
+    
+                marker_a15307acf12848616bc3f17884b336cd.setIcon(icon_a24371c18a0eb1b2bcf4b18c16ef9801);
+            
+    
+                marker_4eaaea287c8c57269d72e95650193bb6.setIcon(icon_f8550b5c5da07e133962ae7145501529);
+            
+    
+                marker_85db181aee63b46b7830b877e65e9a73.setIcon(icon_6569fe4ab43495848ac4fbe6b99389c4);
+            
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
+    </body>
+    </html>
+    

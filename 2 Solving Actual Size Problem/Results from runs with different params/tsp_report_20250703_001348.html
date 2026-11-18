@@ -1,0 +1,630 @@
+
+    <html>
+    <body>
+        <h1>TSP Report</h1>
+        <h3>Parameters</h3>
+            <p>Number of Swap operators: 285</p>
+            <p>Number of Insertion operators: 30</p> 
+            <p>Number of 2-opt operators: 10297</p> 
+            <p>Number of Cross operators: 255</p> 
+            <p>Number of Or-Opt operators: 0</p> 
+            <p>Initial Tempertaure:1500 </p>
+            <p>Update Temperture After 30 iterations</p>
+            <p>Update Temperature function using "T/float(1+iter)"</p>
+
+        <h3>Results</h3>
+            <p>Time Limit: 1800</p>
+            <p>Feasible: False</p>
+            <p>Objective Value: 589.0</p>
+            <p>Latest Arrival Time: 588.0</p>
+            <p>No. of Locations Each FRC visits: between 1 and 7</p>
+        <h3>Matplotlib Plot</h3>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAoAAAAHgCAYAAAA10dzkAAAAOXRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjkuMiwgaHR0cHM6Ly9tYXRwbG90bGliLm9yZy8hTgPZAAAACXBIWXMAAA9hAAAPYQGoP6dpAABU10lEQVR4nO3de5zN1f7H8feemW1uzJgLZiZjTKTcDuUWKhQzaKgUCbl2lSQ5ldOR4ZR0w0kRJ1EkdQq/btTILQeRS4VC5RIGuc24jj0z6/cHe7ObITX7Ovv1fDzmkVn7u797ffbejvdZ67vW12KMMQIAAEDACPJ2BwAAAOBZBEAAAIAAQwAEAAAIMARAAACAAEMABAAACDAEQAAAgABDAAQAAAgwBEAAAIAAQwAEAAAIMARAAACAAEMABAAACDAEQAAAgABDAAQAAAgwBEAAAIAAQwAEAAAIMARAAACAAEMABAAACDAEQAAAgABDAAQAAAgwBEAAAIAAQwAEAAAIMARAAACAAEMABAAACDAEQAAAgABDAAQAAAgwBEAAAIAAQwAEAAAIMARAAACAAEMABAAACDAEQAAAgABDAAQAAAgwBEAAAIAAQwAEAAAIMARAAACAAEMABAAACDAEQAAAgABDAAQ8aOXKlercubMSExNVpkwZJSQk6I477tCKFSuKHJuZmSmLxaIDBw784Xlbtmypli1buqHHZ8ycOVPjxo0r9jGLxaLMzEy3vfbvffvtt7JYLHryyScveMzWrVtlsVg0cODASz6v/f32FpvNpokTJ6pp06aKjo5WeHi4atasqSeffFIHDx70Wr9+b/v27bJYLJf0s337drd/NwH8NSHe7gAQKMaPH69BgwapcePGeuGFF5SSkqKdO3fqtdde03XXXad///vfGjBgwF8694QJE1zcW2czZ87Uhg0bNGjQoCKPrVixQpUrV3br65+vXr16atCggd5++209++yzCg4OLnLM1KlTJUn9+vXzWL9K4sSJE2rfvr2WLVum++67T8OGDVN4eLhWrFihl156STNnzlRWVpauvPJKb3dViYmJRf4PS//+/ZWTk6N33nmnyLHu/m4C+IsMALdbtmyZCQoKMhkZGcZmszk9ZrPZTEZGhgkKCjLLli1ztA8fPtxIMr/99punu1vEzTffbFJSUrzdDYcJEyYYSebjjz8u8lh+fr657LLLTIMGDf7UOe3vtzfcd999RpKZNWtWkcc2b95soqOjTe3atU1+fr5H+3X8+PFLOq5Fixamdu3abu4NAFdiChjwgOeee04Wi0UTJ05USIjzwHtISIgmTJggi8Wi0aNHF3nur7/+qk6dOikqKkrR0dHq0aOHfvvtN6djiptmO336tJ555hldddVVCg0NVYUKFdSnT58iz5XOjPA1bdpUZcuWVdmyZVW/fn1NmTLFce5PP/1UO3bscJreszt/Ctg+PWt/7vnmzZsni8Wijz76yNG2detWdevWTRUrVlRoaKhq1qyp11577eJvpqRu3bopPDzcMdJ3vi+++EK7d+9W3759JUnvvfee0tLSlJiY6DStevz48T98nQtNb1etWlW9e/d2atu7d6/uv/9+Va5cWWXKlFFqaqpGjBih/Pz8i77G3r179eabbyo9PV133nlnkcdr1KihJ554Qhs3btTcuXMlSbfeeqtSUlJUWFhY5PgmTZrommuucfxujNGECRNUv359hYeHKyYmRnfccYd++eUXp+e1bNlSderU0dKlS9WsWTNFREQ43sOS+P130z6F/OKLL+r5559X1apVFR4erpYtW2rLli2y2Wx68sknlZSUpOjoaN12223av39/kfO+9957atq0qSIjI1W2bFmlp6dr3bp1Je4vECgIgICbFRQUaNGiRWrYsOEFp0qTk5PVoEEDLVy4UAUFBU6P3Xbbbapevbo++OADZWZmau7cuUpPT5fNZrvgaxYWFuqWW27R6NGj1a1bN3366acaPXq0srKy1LJlS508edJx7NNPP63u3bsrKSlJ06ZN05w5c9SrVy/t2LFD0pnp5ebNmyshIUErVqxw/BSnXr16uvrqq4sNZtOmTVPFihXVvn17SdKmTZvUqFEjbdiwQS+//LI++eQT3XzzzRo4cKBGjBhx0fc0Ojpat99+uz7++OMigXbq1KkKCwtTt27dJJ0Jme3bt9eUKVM0f/58DRo0SO+//746dOhw0df4M/bu3avGjRvr888/19NPP6158+apX79+eu6553Tvvfde9LmLFi1Sfn6+br311gseY38sKytLktS3b1/t3LlTCxcudDruxx9/1KpVq9SnTx9H2/33369BgwapdevWmjt3riZMmKCNGzeqWbNm2rdvn9Pzs7Oz1aNHD3Xr1k2fffaZ+vfv/yfehT/ntdde0//+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pZMnT+quu+5SdHS0Nm3apAMHDjhW49atW1ezZ8/WxIkT1aBBAwUFBalhw4YXfP3g4GD17NlTY8aMUVRUlDp16qTo6GinY/7973/ruuuu0/XXX68HH3xQVatW1dGjR/XTTz/p448/LrLC9UL69eunTz/9VG+88YbS09OdRjKbNWummJgYPfDAAxo+fLisVqveeecdffvtt5d07rvvvlvDhg3T008/rRYtWmjTpk169dVXi9QycuRIZWVlqVmzZho4cKCuvPJKnTp1Stu3b9dnn32m119//aLT7GPGjNHmzZvVo0cPLV26VB06dFBoaKhWrlypl156SeXKldOHH35YZHT4rrvu0uDBg3XXXXcpLy+vyNY0zZs313333ac+ffrom2++0Q033KDIyEhlZ2dr2bJlqlu3rh588MFLei98RdWqVTVy5Eg99dRT+uWXX9S2bVvFxMRo3759WrVqlSIjI/9wFTkAsQoY8KQVK1aYO+64w1SqVMmEhISYihUrmk6dOpnly5cXOda+KnXNmjWmQ4cOpmzZsqZcuXLmrrvucqwUtmvRooVp2bKlU5vNZjMvvfSSqVevngkLCzNly5Y1V111lbn//vvN1q1bnY59++23TaNGjRzHXX311Wbq1KmOxw8dOmTuuOMOU758eWOxWJxWy+oCK2W3bNliJBlJJisrq9j3Y9u2baZv377msssuM1ar1VSoUME0a9bMPPPMM3/0VjqcPn3aVKpUyUgy77//fpHHly9fbpo2bWoiIiJMhQoVzD333GPWrl1rJDnVWNwq4Ly8PPP444+b5ORkEx4eblq0aGHWr19fZBWwMcb89ttvZuDAgSY1NdVYrVYTGxtrGjRoYJ566ilz7NixS6rjtddeM02aNDFly5Y1oaGh5sorrzSPP/64Y1Vvcbp162YkmebNm1/wmDfffNM0adLEREZGmvDwcFOtWjXTs2dP88033ziOKclmzn9lFfCLL77odJx9Vfd///tfp/apU6caSWb16tVO7XPnzjWtWrUyUVFRJjQ01KSkpJg77rjDLFiw4C/VAAQaizFnlx4C8FtXX321qlWrpg8++MDbXQEA+AGmgAE/tmXLFn311Vf6/vvv1aNHD293BwDgJxgBBPxYnz599PHHH6tjx4567bXXFB4e7u0uAQD8AAEQAAAgwLARNAAAQIAhAAIAAAQYAiAAAECA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404jf3YHDhxQaGiop7rhVyxcAwgAANzAYwHwhhtu0Ntvv+343WKxqLCwUC+++KJatWrlqW74leCznw77AAIAAFfyWAB88cUXNWnSJLVr106nT5/W448/rjp16mjp0qV6/vnn//T5du/erR49eiguLk4RERGqX7++1qxZ43h89uzZSk9PV3x8vCwWi9avX1/kHHl5eXr44YcVHx+vyMhIdezYUbt27SpJmS5lnwJmABAAALiSxwJgrVq19N1336lx48Zq06aNjh8/rk6dOmndunWqVq3anzrX4cOH1bx5c1mtVs2bN0+bNm3Syy+/rPLlyzuOOX78uJo3b67Ro0df8DyDBg3SnDlzNGvWLC1btkzHjh1TRkaGCgoK/mqZLmWfAmYVMAAAcCWPLQKRpISEBI0YMaLE53n++eeVnJysqVOnOtqqVq3qdMzdd98tSdq+fXux58jJydGUKVM0ffp0tW7dWpI0Y8YMJScna8GCBUpPTy9xP0vKvhE0U8AAAMCVPBYAU1NT1aNHD/Xo0UNXXnllic710UcfKT09XZ07d9aSJUt02WWXqX///rr33nsv+Rxr1qyRzWZTWlqaoy0pKUl16tTR8uXLiw2AeXl5ysvLc/yem5srSbLZbLLZbCWoSI7znP9fy3ntrji/L/t97YGE2qk90FA7tXubL/TB2yzGQ5vMjRkzRu+++67WrFmjq6++WnfffbfuvPNOJSYm/ulzhYWFSZIGDx6szp07a9WqVRo0aJAmTZqknj17Oh27fft2paamat26dapfv76jfebMmerTp49ToJOktLQ0paamatKkSUVeNzMzs9gRzJkzZxa7wrmknl0XrP2nLHq4dr6qR7n89AAABKQTJ06oW7duysnJUVRUYP4D67EAaLdlyxa98847mjVrln755Re1atVKPXr0KBLcLqZMmTJq2LChli9f7mgbOHCgVq9erRUrVjgd+2cDYJs2bVStWjW9/vrrRV63uBHA5ORkHThwwCVfIJvNpqysLLVp00ZWq1VtX/mffv7tuGb0bagmqbElPr8v+33tgYTaqZ3aAwe1+0btubm5io+PD+gA6NFrACWpRo0aGjFihEaMGKGVK1fqwQcfVJ8+ff5UAExMTFStWrWc2mrWrKkPP/zwks+RkJCg06dP6/Dhw4qJiXG079+/X82aNSv2OaGhocXuWWi1Wl36Zbaf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2rZtm5t7BsCXhXi7AwD8V9u2bTV16lSnttDQUC/1xj2ys7Mdf37vvff09NNPa/PmzY628PBwlS1bVmXLlvVG9zRlyhQ1bdpUVatWvaTjK1asqLS0NL3++ut6/vnn3ds5AD6LEUAAf1loaKgSEhKcfmJiYi54/BNPPKEaNWooIiJCl19+uYYNGyabzeZ43D6VOmnSJCUnJysiIkKdO3fWkSNHHMcsXrxYjRs3VmRkpMqXL6/mzZtrx44djsc//vhjNWjQQGFhYbr88ss1YsQI5efnOx7funWrbrjhBoWFhalWrVrKysq6aI3n1xYdHS2LxVKk7fdTwL1799att96qUaNGqVKlSipfvryjH3//+98VGxurypUr680333R6rd27d+vOO+9UTEyM4uLidMstt2j79u0X7d+sWbPUsWNHp7YPPvhAdevWVXh4uOLi4tS6dWsdP37c8XjHjh317rvvXvS8AEo3AiAAjylXrpymTZumTZs26d///rf+85//aOzYsU7H/PTTT3r//ff18ccfa/78+Vq/fr0eeughSVJ+fr5uvfVWtWjRQt99951WrFih++67TxaLRZL0+eefq0ePHho4cKA2bdqkSZMmadq0aXr22WclSYWFherUqZOCg4O1cuVKvf7663riiSfcUuvChQu1Z88eLV26VGPGjFFmZqYyMjIUExOjr7/+Wg888IAeeOAB/frrr5KkEydOqFWrVipbtqyWLl2qZcuWqWzZsmrbtq1Onz5d7GscPnxYGzZsUMOGDR1t2dnZuuuuu9S3b1/98MMPWrx4sTp16qTzb/veuHFj/frrr07BGUCAMQDwF/Tq1csEBwebyMhIp5+RI0c6jpFk5syZc8FzvPDCC6ZBgwaO34cPH26Cg4PNr7/+6mibN2+eCQoKMtnZ2ebgwYNGklm8eHGx57v++uvNqFGjnNqmT59uEhMTjTHGfP7558We/4/6aTd16lQTHR1dpH348OGmXr16jt979eplUlJSTEFBgaPtyiuvNNdff73j9/z8fBMZGWneffddY4wxU6ZMMVdeeaUpLCx0HJOXl2fCw8PN559/Xmx/1q1bZySZnTt3OtrWrFljJJnt27dfsI6cnJyLvo8ASj+uAQTwl7Vq1UoTJ050aouNjb3g8R988IHGjRunn376SceOHVN+fr6ioqKcjqlSpYoqV67s+L1p06YqLCzU5s2b1aJFC/Xu3Vvp6elq06aNWrdurS5duigxMVGStGbNGq1evdox4idJBQUFOnXqlE6cOKEffvih2PO7Q+3atRUUdG6SpVKlSqpTp47j9+DgYMXFxWn//v2Ovv/0008qV66c03lOnTqln3/+udjXOHnypCQpLCzM0VavXj3ddNNNqlu3rtLT05WWlqY77rjDaWo+PDxc0plRRwCBiSlgAH9ZZGSkqlev7vRzoQC4cuVKde3aVe3atdMnn3yidevW6amnnrrg9KadfXrX/t+pU6dqxYoVatasmd577z3VqFFDK1eulHRminfEiBFav3694+f777/X1q1bFRYW5jQN+vvzu5rVai3yOsW1FRYWOvreoEEDp76vX79eW7ZsUbdu3Yp9jfj4eElnpoLtgoODlZWVpXnz5qlWrVoaP368rrzySqdVv4cOHZIkVahQoeSFAvBLjAAC8Ij//e9/SklJ0VNPPeVoK+4atJ07d2rPnj1KSkqSJK1YsUJBQUGqUaOG45irr75aV199tYYOHaqmTZtq5syZuvbaa3XNNddo8+bNql69erF9qFWrVrHn9wXXXHON3nvvPVWsWLHIqOiFVKtWTVFRUdq0aZPT+2OxWNS8eXM1b95cTz/9tFJSUjRnzhwNHjxYkrRhwwZZrVbVrl3bLbUA8H2MAAL4y/Ly8rR3716nnwMHDhR7bPXq1bVz507NmjVLP//8s1555RXNmTOnyHFhYWHq1auXvv32W3311VcaOHCgunTpooSEBG3btk1Dhw7VihUrtGPHDn3xxRfasmWLatasKUl6+umn9fbbbyszM1MbN27UDz/8oPfee0///Oc/JUmtW7fWlVdeqZ49ezrOf34g9abu3bsrPj5et9xyi7766itt27ZNS5Ys0SOPPKJdu3YV+5ygoCC1bt1ay5Ytc7R9/fXXGjVqlL755hvt3LlTs2fP1m+//eZ4jyTpq6++0vXXX++YCgYQeAiAAP6y+fPnKzEx0ennuuuuK/bYW265RY8++qgGDBig+vXra/ny5Ro2bFiR46pXr65OnTqpffv2SktLU506dTRhwgRJUkREhH788UfdfvvtqlGjhu677z4NGDBA999/vyQpPT1dn3zyibKystSoUSNde+21GjNmjFJSUiSdCUxz5sxRXl6eGjdurHvuucfpekFvioiI0NKlS1WlShV16tRJNWvWVN++fXXy5MmLjgjed999mjVrlmMqOSoqSkuXLlX79u1Vo0YN/fOf/9TLL7+sdu3aOZ7z7rvv6t5773V7TQB8l8UUd1EMAHhBZmam5s6dq/Xr13u7K37DGKNrr71WgwYN0l133fWHx3/66af6+9//ru+++04hIVwFBAQqRgABwI9ZLBZNnjzZabPrizl+/LimTp1K+AMCHP8LAAB+rl69eqpXr94lHdulSxc39waAP2AKGAAAIMAwBQwAABBgCIAAAAABhgAIAAAQYAiAAAAAAYYACAAAEGAIgAAAAAGGAAgAABBgCIAAAAABhgAIAAAQYP4fYpwafkUGrgUAAAAASUVORK5CYII="/>
+        <h3>Folium Map</h3>
+        <div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_5a2c25c5432206d4cc71932b309906f1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+
+            &lt;style&gt;html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            &lt;/style&gt;
+
+            &lt;style&gt;#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            &lt;/style&gt;
+
+            &lt;script&gt;
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            &lt;/script&gt;
+
+        
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_5a2c25c5432206d4cc71932b309906f1&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_5a2c25c5432206d4cc71932b309906f1 = L.map(
+                &quot;map_5a2c25c5432206d4cc71932b309906f1&quot;,
+                {
+                    center: [1.3521, 103.8198],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;zoom&quot;: 12,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b3138672604f113e04ea2bee0ff7eb1b = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_b3138672604f113e04ea2bee0ff7eb1b.addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            var poly_line_7965d06b4122d94600657904e57aecfd = L.polyline(
+                [[1.3773, 103.8458], [1.3519117, 103.8489708], [1.3175122, 103.7964628], [1.359286, 103.83403591176392], [1.357107, 103.8194992], [1.36790975, 103.8369151909007], [1.3817905, 103.8449359], [1.3773, 103.8458]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            poly_line_7965d06b4122d94600657904e57aecfd.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc1
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_c2993f60732e30d43acac9dfcdfc4211 = L.marker(
+                [1.3773, 103.8458],
+                {
+}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            var icon_bf925f449e16f2d55bcd3f101adb5680 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_c2993f60732e30d43acac9dfcdfc4211.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc1 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_c2993f60732e30d43acac9dfcdfc4211.setIcon(icon_bf925f449e16f2d55bcd3f101adb5680);
+            
+    
+            var poly_line_1fefa82785f8d1b0ce115cddafda7cd5 = L.polyline(
+                [[1.3281, 103.9323], [1.3753678, 103.9772924], [1.40941835, 103.9214699987144], [1.4066031, 103.90207073683268], [1.394518, 103.9004349], [1.3690124, 103.93809295626107], [1.3281, 103.9323]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            poly_line_1fefa82785f8d1b0ce115cddafda7cd5.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc2
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_232c37c4565ed03a5278f42b6dc75c23 = L.marker(
+                [1.3281, 103.9323],
+                {
+}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            var icon_501024a0f593ffb315356e54d64672d3 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_232c37c4565ed03a5278f42b6dc75c23.bindTooltip(
+                `&lt;div&gt;
+                     hq1_frc2 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_232c37c4565ed03a5278f42b6dc75c23.setIcon(icon_501024a0f593ffb315356e54d64672d3);
+            
+    
+            var poly_line_58769f4fd90b6145f9c42d3da061849f = L.polyline(
+                [[1.2765, 103.839], [1.26703035, 103.84874797936877], [1.2748641, 103.8202761], [1.2860113, 103.8274107], [1.29955225, 103.84533749528336], [1.2801372, 103.8543912], [1.2835416999999998, 103.85146023266938], [1.2765, 103.839]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            poly_line_58769f4fd90b6145f9c42d3da061849f.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc1
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_7af83850a5e713bd83cbdb3e78913fad = L.marker(
+                [1.2765, 103.839],
+                {
+}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            var icon_660daa9abca104625ab2e81c7f99ccc8 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;green&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_7af83850a5e713bd83cbdb3e78913fad.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc1 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_7af83850a5e713bd83cbdb3e78913fad.setIcon(icon_660daa9abca104625ab2e81c7f99ccc8);
+            
+    
+            var poly_line_14430f74ae9671a1f37421a07527b114 = L.polyline(
+                [[1.3114, 103.7605], [1.3151003, 103.7652311], [1.2986733, 103.8047458], [1.2896482, 103.8167677], [1.3170586, 103.7554066], [1.3300518, 103.6395694], [1.3038766, 103.7392193], [1.3114, 103.7605]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;purple&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;purple&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            poly_line_14430f74ae9671a1f37421a07527b114.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc2
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_c653bde0ca68855dc31b00e868e171a9 = L.marker(
+                [1.3114, 103.7605],
+                {
+}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            var icon_fb1996d7afba0588c02566ca47df680b = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;purple&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_c653bde0ca68855dc31b00e868e171a9.bindTooltip(
+                `&lt;div&gt;
+                     hq2_frc2 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_c653bde0ca68855dc31b00e868e171a9.setIcon(icon_fb1996d7afba0588c02566ca47df680b);
+            
+    
+            var poly_line_ac6a2ce43368aacdd7b9673c0b30a775 = L.polyline(
+                [[1.3475, 103.7064], [1.3347142, 103.7185508091162], [1.3253215, 103.7092754], [1.3300518, 103.6395694], [1.33828435, 103.69108941866652], [1.3845932, 103.7708754], [1.3847493, 103.7445341], [1.3475, 103.7064]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;orange&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;orange&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            poly_line_ac6a2ce43368aacdd7b9673c0b30a775.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc1
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_562d24652e58558ca5fb21016787b3d3 = L.marker(
+                [1.3475, 103.7064],
+                {
+}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            var icon_b2a4f121890bc8aaacce7b1fe4cdcfd2 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;orange&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_562d24652e58558ca5fb21016787b3d3.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc1 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_562d24652e58558ca5fb21016787b3d3.setIcon(icon_b2a4f121890bc8aaacce7b1fe4cdcfd2);
+            
+    
+            var poly_line_1a42f9ed236b4784c75289b8b4ac76ff = L.polyline(
+                [[1.3115, 103.8416], [1.30684265, 103.84927355170905], [1.3082141, 103.865911], [1.2930272, 103.85264479617268], [1.29616795, 103.85004365998248], [1.300066, 103.8247268], [1.30659285, 103.82299205452576], [1.31353095, 103.8266548476678], [1.3115, 103.8416]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;darkred&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;darkred&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            poly_line_1a42f9ed236b4784c75289b8b4ac76ff.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc2
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_4f7f30afab5d6953df86756789f9f089 = L.marker(
+                [1.3115, 103.8416],
+                {
+}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            var icon_5d3bf9a04a4db8a460e13fec9b8a42f4 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;darkred&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_4f7f30afab5d6953df86756789f9f089.bindTooltip(
+                `&lt;div&gt;
+                     hq3_frc2 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_4f7f30afab5d6953df86756789f9f089.setIcon(icon_5d3bf9a04a4db8a460e13fec9b8a42f4);
+            
+    
+            var poly_line_eae0f4a376dc2d404798e5e951d95cb3 = L.polyline(
+                [[1.4353, 103.786], [1.3965351, 103.774025], [1.3588929, 103.7518249], [1.4271409, 103.79429763815054], [1.458458, 103.83740461856748], [1.4235346, 103.8033499], [1.4019703, 103.8228603], [1.4353, 103.786]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;cadetblue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;cadetblue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            poly_line_eae0f4a376dc2d404798e5e951d95cb3.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc1
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_aac7ac3776373edb7aae92c448e4b2d3 = L.marker(
+                [1.4353, 103.786],
+                {
+}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            var icon_53002623bdf40ebb98ecc16a38e6188e = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;cadetblue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_aac7ac3776373edb7aae92c448e4b2d3.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc1 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_aac7ac3776373edb7aae92c448e4b2d3.setIcon(icon_53002623bdf40ebb98ecc16a38e6188e);
+            
+    
+            var poly_line_c180426d3d89d5315164e62269c7898d = L.polyline(
+                [[1.3773, 103.8458], [1.3326741, 103.85052221136596], [1.32620695, 103.88950695393876], [1.3355302, 103.8833207], [1.3395975, 103.8972723], [1.3708011, 103.89254433997463], [1.3854637, 103.8656683], [1.3773, 103.8458]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            poly_line_c180426d3d89d5315164e62269c7898d.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc2
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_64152becc6b96dd678ad2293f54c1db0 = L.marker(
+                [1.3773, 103.8458],
+                {
+}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            var icon_4db57447113e7ae63970ca3c7b1ce7e9 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_64152becc6b96dd678ad2293f54c1db0.bindTooltip(
+                `&lt;div&gt;
+                     hq4_frc2 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_64152becc6b96dd678ad2293f54c1db0.setIcon(icon_4db57447113e7ae63970ca3c7b1ce7e9);
+            
+    
+            var poly_line_908d38e2c2282589d11803a513a3a4cc = L.polyline(
+                [[1.3281, 103.9323], [1.3176986, 103.9185698], [1.3104654, 103.9235132], [1.3344768, 103.91828105834637], [1.3281, 103.9323]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;blue&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;blue&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            poly_line_908d38e2c2282589d11803a513a3a4cc.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc1
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_814f5adedcd811aebf363d7f64f66b13 = L.marker(
+                [1.3281, 103.9323],
+                {
+}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            var icon_5793caf625396a80d35eecde4988c772 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;blue&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_814f5adedcd811aebf363d7f64f66b13.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc1 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_814f5adedcd811aebf363d7f64f66b13.setIcon(icon_5793caf625396a80d35eecde4988c772);
+            
+    
+            var poly_line_ebd0ef20f273dc9e9951d66bdcc88b89 = L.polyline(
+                [[1.2765, 103.839], [1.2831661, 103.8415181], [1.2765, 103.839]],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;green&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: false, &quot;fillColor&quot;: &quot;green&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;noClip&quot;: false, &quot;opacity&quot;: 0.7, &quot;smoothFactor&quot;: 1.0, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            poly_line_ebd0ef20f273dc9e9951d66bdcc88b89.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc2
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+            var marker_100457e729aa1aa7c8ceaa3d7690ae90 = L.marker(
+                [1.2765, 103.839],
+                {
+}
+            ).addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+            var icon_a4cac7825e00e6ba1d4775140903e04e = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;green&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;home&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+            marker_100457e729aa1aa7c8ceaa3d7690ae90.bindTooltip(
+                `&lt;div&gt;
+                     hq5_frc2 HQ
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_100457e729aa1aa7c8ceaa3d7690ae90.setIcon(icon_a4cac7825e00e6ba1d4775140903e04e);
+            
+    
+            tile_layer_b3138672604f113e04ea2bee0ff7eb1b.addTo(map_5a2c25c5432206d4cc71932b309906f1);
+        
+    
+                marker_c2993f60732e30d43acac9dfcdfc4211.setIcon(icon_bf925f449e16f2d55bcd3f101adb5680);
+            
+    
+                marker_232c37c4565ed03a5278f42b6dc75c23.setIcon(icon_501024a0f593ffb315356e54d64672d3);
+            
+    
+                marker_7af83850a5e713bd83cbdb3e78913fad.setIcon(icon_660daa9abca104625ab2e81c7f99ccc8);
+            
+    
+                marker_c653bde0ca68855dc31b00e868e171a9.setIcon(icon_fb1996d7afba0588c02566ca47df680b);
+            
+    
+                marker_562d24652e58558ca5fb21016787b3d3.setIcon(icon_b2a4f121890bc8aaacce7b1fe4cdcfd2);
+            
+    
+                marker_4f7f30afab5d6953df86756789f9f089.setIcon(icon_5d3bf9a04a4db8a460e13fec9b8a42f4);
+            
+    
+                marker_aac7ac3776373edb7aae92c448e4b2d3.setIcon(icon_53002623bdf40ebb98ecc16a38e6188e);
+            
+    
+                marker_64152becc6b96dd678ad2293f54c1db0.setIcon(icon_4db57447113e7ae63970ca3c7b1ce7e9);
+            
+    
+                marker_814f5adedcd811aebf363d7f64f66b13.setIcon(icon_5793caf625396a80d35eecde4988c772);
+            
+    
+                marker_100457e729aa1aa7c8ceaa3d7690ae90.setIcon(icon_a4cac7825e00e6ba1d4775140903e04e);
+            
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
+    </body>
+    </html>
+    

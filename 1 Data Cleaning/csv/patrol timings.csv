@@ -1,0 +1,305 @@
+,Places,Amount of time to patrol
+1,Bishan East,84
+2,Marymount,61
+3,Upper Thomson,76
+4,Alexandra Hill,89
+5,Alexandra North,69
+6,Bukit Ho Swee,71
+7,Bukit Merah,89
+8,Depot Road,64
+9,Everton Park,84
+10,Henderson Hill,85
+11,Kampong Tiong Bahru,89
+12,Maritime Square,82
+13,Redhill,88
+14,Singapore General Hospital,63
+15,Telok Blangah Drive,88
+16,Telok Blangah Rise,70
+17,Telok Blangah Way,63
+18,Tiong Bahru,70
+19,Tiong Bahru Station,89
+20,Anak Bukit,77
+21,Coronation Road,87
+22,Farrer Court,61
+23,Hillcrest,77
+24,Holland Road,62
+25,Leedon Park,72
+26,Swiss Club,85
+27,Ulu Pandan,60
+28,Anson,86
+29,Bugis,67
+30,Cecil,82
+31,City Hall,66
+32,Clifford Pier,67
+33,Marina Centre,90
+34,Maxwell,77
+35,Nicoll,62
+36,Phillip,88
+37,Raffles Place,89
+38,Tanjong Pagar,69
+39,Aljunied,82
+40,Geylang East,70
+41,Kallang Way,77
+42,Kampong Ubi,85
+43,MacPherson,78
+44,Bendemeer,62
+45,Boon Keng,72
+46,Crawford,67
+47,Geylang Bahru,66
+48,Kallang Bahru,61
+49,Kampong Bugis,81
+50,Kampong Java,62
+51,Lavender,84
+52,Tanjong Rhu,64
+53,Marina East,86
+54,Marina South,82
+55,East Coast,77
+56,Katong,86
+57,Marine Parade,67
+58,Mountbatten,88
+59,Bras Basah,86
+60,Dhoby Ghaut,78
+61,Fort Canning,75
+62,Cairnhill,82
+63,Goodwood Park,85
+64,Monk's Hill,70
+65,Newton Circus,75
+66,Orange Grove,70
+67,Balestier,67
+68,Dunearn,98
+69,Malcolm,67
+70,Moulmein,65
+71,Mount Pleasant,86
+72,Boulevard,85
+73,Somerset,82
+74,Tanglin,86
+75,China Square,89
+76,Chinatown,79
+77,Pearl's Hill,60
+78,People's Park,66
+79,Commonwealth,78
+80,Dover,62
+81,Ghim Moh,63
+82,Holland Drive,90
+83,Kent Ridge,65
+84,Margaret Drive,75
+85,Mei Chin,85
+86,National University of Singapore,81
+87,one-north,103
+88,Pasir Panjang 1,86
+89,Pasir Panjang 2,67
+90,Port,69
+91,Queensway,65
+92,Singapore Polytechnic,74
+93,Tanglin Halt,93
+94,Institution Hill,72
+95,Leonie Hill,71
+96,One Tree Hill,75
+97,Oxley,89
+98,Paterson,82
+99,Bencoolen,90
+100,Farrer Park,85
+101,Kampong Glam,87
+102,Little India,76
+103,Mackenzie,79
+104,Mount Emily,81
+105,Rochor Canal,75
+106,Selegie,88
+107,Sungei Road,76
+108,Victoria,80
+109,Boat Quay,86
+110,Clarke Quay,64
+111,Robertson Quay,60
+112,Sentosa,62
+113,Chatsworth,61
+114,Nassim,64
+115,Ridout,90
+116,Tyersall,79
+117,Bidadari,71
+118,Boon Teck,88
+119,Braddell,79
+120,Joo Seng,69
+121,Kim Keat,73
+122,Lorong 8 Toa Payoh,62
+123,Pei Chun,96
+124,Potong Pasir,65
+125,Sennett,80
+126,Toa Payoh Central,82
+127,Toa Payoh West,78
+128,Woodleigh,61
+129,Central Water Catchment,82
+130,Mandai East,84
+131,Mandai Estate,61
+132,Mandai West,62
+133,Admiralty,65
+134,Sembawang Central,88
+135,Sembawang East,77
+136,Sembawang North,60
+137,Sembawang Spring,75
+138,Sembawang Straits,86
+139,Senoko North,85
+140,Senoko South,85
+141,The Wharves,77
+142,Simpang North,80
+143,Simpang South,86
+144,Gali Batu,60
+145,Kranji,81
+146,Pang Sua,60
+147,Reservoir View,82
+148,Turf Club,86
+149,Greenwood Park,79
+150,Midview,63
+151,North Coast,66
+152,Senoko West,68
+153,Woodgrove,65
+154,Woodlands East,87
+155,Woodlands Regional Centre,80
+156,Woodlands South,68
+157,Woodlands West,85
+158,Khatib,87
+159,Lower Seletar,80
+160,Nee Soon,80
+161,Northland,63
+162,Springleaf,68
+163,Yishun Central,61
+164,Yishun East,111
+165,Yishun South,70
+166,Yishun West,90
+167,Bayshore,87
+168,Bedok North,113
+169,Bedok Reservoir,79
+170,Bedok South,82
+171,Frankel,74
+172,Kaki Bukit,71
+173,Kembangan,65
+174,Siglap,78
+175,Changi Airport,64
+176,Changi Point,70
+177,Changi West,71
+178,Changi Bay,70
+179,Flora Drive,61
+180,Loyang East,95
+181,Loyang West,78
+182,Pasir Ris Central,72
+183,Pasir Ris Drive,64
+184,Pasir Ris Park,75
+185,Pasir Ris West,89
+186,Airport Road,95
+187,Paya Lebar East,83
+188,Paya Lebar North,72
+189,Paya Lebar West,69
+190,Simei,63
+191,Tampines East,75
+192,Tampines North,86
+193,Tampines West,85
+194,Xilin,75
+195,Liu Fang,75
+196,Samulun,69
+197,Shipyard,81
+198,Tukang,89
+199,Brickworks,78
+200,Bukit Batok Central,80
+201,Bukit Batok East,85
+202,Bukit Batok West,83
+203,Bukit Batok South,72
+204,Gombak,102
+205,Guilin,69
+206,Hillview,75
+207,Hong Kah North,82
+208,Bangkit,73
+209,Dairy Farm,67
+210,Fajar,68
+211,Jelebu,65
+212,Nature Reserve,71
+213,Saujana,86
+214,Senja,82
+215,Choa Chu Kang Central,106
+216,Choa Chu Kang North,81
+217,Keat Hong,75
+218,Teck Whye,66
+219,Yew Tee,90
+220,Clementi Central,79
+221,Clementi North,66
+222,Clementi West,71
+223,Clementi Woods,64
+224,Faber,79
+225,Pandan,64
+226,Sunset Way,80
+227,Toh Tuck,88
+228,West Coast,81
+229,International Business Park,70
+230,Jurong Gateway,75
+231,Jurong Port,87
+232,Jurong River,79
+233,Lakeside (Business),60
+234,Penjuru Crescent,90
+235,Teban Gardens,70
+236,Toh Guan,61
+237,Yuhua East,87
+238,Yuhua West,85
+239,Boon Lay Place,72
+240,Chin Bee,82
+241,Hong Kah,75
+242,Jurong West Central,62
+243,Kian Teck,89
+244,Safti,97
+245,Taman Jurong,69
+246,Yunnan,117
+247,Benoi Sector,87
+248,Gul Circle,64
+249,Joo Koon,74
+250,Pioneer Sector,76
+251,Brickland,76
+252,Forest Hill,78
+253,Garden,85
+254,Plantation,84
+255,Tengeh,62
+256,Tuas Bay,88
+257,Tuas North,69
+258,Tuas View,79
+259,Bahar,75
+260,Cleantech,72
+261,Ang Mo Kio Town Centre,67
+262,Cheng San,85
+263,Chong Boon,118
+264,Kebun Baru,95
+265,Sembawang Hills,78
+266,Shangri-La,62
+267,Tagore,68
+268,Townsville,69
+269,Yio Chu Kang,72
+270,Yio Chu Kang East,61
+271,Yio Chu Kang North,89
+272,Yio Chu Kang West,69
+273,Defu Industrial Park,70
+274,Hougang Central,61
+275,Hougang East,64
+276,Hougang West,87
+277,Kangkar,62
+278,Kovan,64
+279,Lorong Ah Soo,71
+280,Lorong Halus,79
+281,Tai Seng,74
+282,Coney Island,105
+283,Matilda,60
+284,Northshore,109
+285,Punggol Canal,70
+286,Punggol Field,77
+287,Punggol Town Centre,66
+288,Waterway East,84
+289,Pulau Punggol Barat,63
+290,Pulau Punggol Timor,79
+291,Seletar,79
+292,Seletar Aerospace Park,70
+293,Anchorvale,81
+294,Compassvale,69
+295,Fernvale,64
+296,Lorong Halus North,72
+297,Rivervale,89
+298,Sengkang West,90
+299,Lorong Chuan,85
+300,Seletar Hills,87
+301,Serangoon Central,66
+302,Serangoon Garden,102
+303,Serangoon North,84
+304,Upper Paya Lebar,71
