@@ -1,6 +1,6 @@
 # Multi-Depot Route Optimisation with Metaheuristics
 
-**How can 56 patrol vehicles cover 304 Singapore subzones in one night while minimising travel time?** We model the problem as routing from seven headquarters within a ten-hour shift, then combine a greedy initial solution with simulated annealing and five local search operators.
+**How can 56 police patrol vehicles cover 304 Singapore subzones between 9 PM and 7 AM while minimising travel time?** In this academic case study, Fast Response Cars depart from the seven Singapore police headquarters, patrol every subzone exactly once, and return to their assigned headquarters before the ten-hour shift ends. Each route must account for both driving time and time spent patrolling. We tackle this scheduling problem using a greedy initial solution, simulated annealing, and five local search operators.
 
 The final saved full-instance run achieved **2,205 minutes of total travel across all vehicles** after a one-hour search. Its routes cover every patrol location exactly once and return to their assigned headquarters within the shift. A smaller-instance benchmark compares the heuristic with a Gurobi mixed-integer formulation.
 
