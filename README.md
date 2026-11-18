@@ -98,14 +98,11 @@ $env:GOOGLE_MAPS_API_KEY = "YOUR_OWN_KEY"
 
 The notebook reads `os.environ["GOOGLE_MAPS_API_KEY"]`; a missing variable raises `KeyError`. For VS Code, ensure the notebook kernel inherits that variable before running data collection. Do not save the key in notebook cells or outputs. Local `.env` files and Gurobi licence files are ignored by Git.
 
-## Interpreting feasibility
+## Result validation
 
-- Historical HTML files retain their original `Feasible: True/False` values. The results index transcribes those values; it does not revalidate the routes.
-- The showcased one-hour run was separately checked against the shared CSVs: 304 unique patrol visits, 56 routes, assigned start/end depots, no intermediate depot visits, all route durations within 600 minutes, and total travel time of 2,205 minutes. The [verification summary](docs/assets/run-summary.json) includes the routes and source hashes. Its latest return is **599 minutes**; the report's prose lists 559. The showcase uses the value in the saved HTML and recomputed routes; the original files are unchanged.
-- In the current metaheuristics code, `feasible_solution` checks only that each route's duration is at most 600 minutes. Full feasibility also requires checking coverage, duplicate visits, and depot assignment. New HTML exports explicitly label the check as a **route-duration check**.
-- An infeasible candidate's objective is not a valid feasible-solution benchmark. A missing status is **unknown**, not feasible.
-- A Gurobi time-limit exit does not imply a solution exists. The notebooks now check `SolCount > 0` before accessing objective values and routes, and distinguish a feasible incumbent from a proven optimum.
-- Full and smaller instances must be compared separately. Historical filenames alone do not reliably identify instance size.
+The showcased solution visits all 304 locations exactly once, starts and ends each route at its assigned headquarters, and keeps every route within the 600-minute shift. Its total travel time is **2,205 minutes**. Historical experiments retain their original feasibility labels and have not all been independently validated. Full-instance and smaller-instance results should be compared separately.
+
+See the [verification summary](docs/assets/run-summary.json) for the checked routes and the [results notes](RESULTS.md#validation-notes) for details.
 
 ## Team and contributions
 

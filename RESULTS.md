@@ -12,6 +12,14 @@ Do not rank infeasible candidates alongside feasible solutions, or compare diffe
 
 Objectives are recorded total travel times in minutes; arrival durations are in minutes. Run limits are seconds, not measured times to best solution.
 
+## Validation notes
+
+- The showcased one-hour run was checked against the shared CSVs for unique coverage of all 304 patrol locations, 56 routes, assigned start/end depots, no intermediate depot visits, route durations within 600 minutes, and total travel time of 2,205 minutes. Its latest return is **599 minutes**. The latest-return typo in Section 7 of the PDF report has been corrected from 559 to 599; archived experiment files are unchanged.
+- The [verification summary](docs/assets/run-summary.json) contains all checked routes, recorded and recomputed route durations, validation results, and source hashes.
+- In the current metaheuristics code, `feasible_solution` tests route duration only. Coverage, duplicate visits, and depot assignment require separate checks. New HTML exports label it as a **route-duration check**.
+- An infeasible candidate's objective is not a feasible-solution benchmark. A missing feasibility status is **unknown**.
+- A Gurobi time-limit exit does not imply that a solution exists. The notebooks check `SolCount > 0` before accessing objectives or routes, and distinguish a feasible incumbent from a proven optimum.
+
 ## 2 Solving Actual Size Problem/Results from runs with different params
 
 | Report | Recorded status | Objective | Latest arrival | Run limit (s) |

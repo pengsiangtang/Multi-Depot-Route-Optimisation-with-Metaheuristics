@@ -17,7 +17,7 @@
     "all_routes_within_600_minutes": true,
     "computed_objective_matches_2205": true
   },
-  "note": "Audit of archived routes, not an optimisation rerun. Report prose says latest return 559; saved report and shared data give 599.",
+  "note": "Audit of archived routes, not an optimisation rerun. The report's latest-return typo was corrected to 599 minutes to match the saved report and shared data.",
   "routes": [
     {
       "vehicle": "hq1_frc1",
